@@ -14,6 +14,13 @@
 		DA4B0DC4230AC0B7007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC2230AC0B7007947C3 /* LaunchScreen.storyboard */; };
 		DA4B0DCF230AC0B8007947C3 /* AretctTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DCE230AC0B8007947C3 /* AretctTests.swift */; };
 		DA4B0DDA230AC0B8007947C3 /* AretctUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */; };
+		DA4B0DEE230AC109007947C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DED230AC109007947C3 /* AppDelegate.swift */; };
+		DA4B0DF0230AC109007947C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DEF230AC109007947C3 /* ViewController.swift */; };
+		DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF1230AC109007947C3 /* Main.storyboard */; };
+		DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */; };
+		DA4B0E03230AC10A007947C3 /* AretctAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */; };
+		DA4B0E0E230AC10A007947C3 /* AretctAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */; };
+		DA4B0E1A230AC1C4007947C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +38,20 @@
 			remoteGlobalIDString = DA4B0DB5230AC0B7007947C3;
 			remoteInfo = Aretct;
 		};
+		DA4B0DFF230AC10A007947C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4B0DAE230AC0B7007947C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4B0DEA230AC109007947C3;
+			remoteInfo = AretctAdmin;
+		};
+		DA4B0E0A230AC10A007947C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA4B0DAE230AC0B7007947C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4B0DEA230AC109007947C3;
+			remoteInfo = AretctAdmin;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +68,18 @@
 		DA4B0DD5230AC0B8007947C3 /* AretctUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctUITests.swift; sourceTree = "<group>"; };
 		DA4B0DDB230AC0B8007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4B0DEB230AC109007947C3 /* AretctAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AretctAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4B0DED230AC109007947C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA4B0DEF230AC109007947C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA4B0DF2230AC109007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA4B0DF7230AC10A007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA4B0DF9230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4B0DFE230AC10A007947C3 /* AretctAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctAdminTests.swift; sourceTree = "<group>"; };
+		DA4B0E04230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4B0E09230AC10A007947C3 /* AretctAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctAdminUITests.swift; sourceTree = "<group>"; };
+		DA4B0E0F230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +104,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA4B0DE8230AC109007947C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0DFB230AC10A007947C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0E06230AC10A007947C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		DA4B0DAD230AC0B7007947C3 = {
 			isa = PBXGroup;
 			children = (
+				DA4B0E19230AC141007947C3 /* Shared */,
 				DA4B0DB8230AC0B7007947C3 /* Aretct */,
 				DA4B0DCD230AC0B8007947C3 /* AretctTests */,
 				DA4B0DD8230AC0B8007947C3 /* AretctUITests */,
+				DA4B0DEC230AC109007947C3 /* AretctAdmin */,
+				DA4B0E01230AC10A007947C3 /* AretctAdminTests */,
+				DA4B0E0C230AC10A007947C3 /* AretctAdminUITests */,
 				DA4B0DB7230AC0B7007947C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +148,9 @@
 				DA4B0DB6230AC0B7007947C3 /* Aretct.app */,
 				DA4B0DCA230AC0B8007947C3 /* AretctTests.xctest */,
 				DA4B0DD5230AC0B8007947C3 /* AretctUITests.xctest */,
+				DA4B0DEB230AC109007947C3 /* AretctAdmin.app */,
+				DA4B0DFE230AC10A007947C3 /* AretctAdminTests.xctest */,
+				DA4B0E09230AC10A007947C3 /* AretctAdminUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,7 +161,6 @@
 				DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */,
 				DA4B0DBB230AC0B7007947C3 /* ViewController.swift */,
 				DA4B0DBD230AC0B7007947C3 /* Main.storyboard */,
-				DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */,
 				DA4B0DC2230AC0B7007947C3 /* LaunchScreen.storyboard */,
 				DA4B0DC5230AC0B7007947C3 /* Info.plist */,
 			);
@@ -123,6 +183,44 @@
 				DA4B0DDB230AC0B8007947C3 /* Info.plist */,
 			);
 			path = AretctUITests;
+			sourceTree = "<group>";
+		};
+		DA4B0DEC230AC109007947C3 /* AretctAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B0DED230AC109007947C3 /* AppDelegate.swift */,
+				DA4B0DEF230AC109007947C3 /* ViewController.swift */,
+				DA4B0DF1230AC109007947C3 /* Main.storyboard */,
+				DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */,
+				DA4B0DF9230AC10A007947C3 /* Info.plist */,
+			);
+			path = AretctAdmin;
+			sourceTree = "<group>";
+		};
+		DA4B0E01230AC10A007947C3 /* AretctAdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */,
+				DA4B0E04230AC10A007947C3 /* Info.plist */,
+			);
+			path = AretctAdminTests;
+			sourceTree = "<group>";
+		};
+		DA4B0E0C230AC10A007947C3 /* AretctAdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */,
+				DA4B0E0F230AC10A007947C3 /* Info.plist */,
+			);
+			path = AretctAdminUITests;
+			sourceTree = "<group>";
+		};
+		DA4B0E19230AC141007947C3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +279,59 @@
 			productReference = DA4B0DD5230AC0B8007947C3 /* AretctUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DA4B0DEA230AC109007947C3 /* AretctAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4B0E10230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdmin" */;
+			buildPhases = (
+				DA4B0DE7230AC109007947C3 /* Sources */,
+				DA4B0DE8230AC109007947C3 /* Frameworks */,
+				DA4B0DE9230AC109007947C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AretctAdmin;
+			productName = AretctAdmin;
+			productReference = DA4B0DEB230AC109007947C3 /* AretctAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA4B0DFD230AC10A007947C3 /* AretctAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4B0E13230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminTests" */;
+			buildPhases = (
+				DA4B0DFA230AC10A007947C3 /* Sources */,
+				DA4B0DFB230AC10A007947C3 /* Frameworks */,
+				DA4B0DFC230AC10A007947C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4B0E00230AC10A007947C3 /* PBXTargetDependency */,
+			);
+			name = AretctAdminTests;
+			productName = AretctAdminTests;
+			productReference = DA4B0DFE230AC10A007947C3 /* AretctAdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA4B0E08230AC10A007947C3 /* AretctAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4B0E16230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminUITests" */;
+			buildPhases = (
+				DA4B0E05230AC10A007947C3 /* Sources */,
+				DA4B0E06230AC10A007947C3 /* Frameworks */,
+				DA4B0E07230AC10A007947C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4B0E0B230AC10A007947C3 /* PBXTargetDependency */,
+			);
+			name = AretctAdminUITests;
+			productName = AretctAdminUITests;
+			productReference = DA4B0E09230AC10A007947C3 /* AretctAdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +353,17 @@
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = DA4B0DB5230AC0B7007947C3;
 					};
+					DA4B0DEA230AC109007947C3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DA4B0DFD230AC10A007947C3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = DA4B0DEA230AC109007947C3;
+					};
+					DA4B0E08230AC10A007947C3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = DA4B0DEA230AC109007947C3;
+					};
 				};
 			};
 			buildConfigurationList = DA4B0DB1230AC0B7007947C3 /* Build configuration list for PBXProject "Aretct" */;
@@ -220,6 +382,9 @@
 				DA4B0DB5230AC0B7007947C3 /* Aretct */,
 				DA4B0DC9230AC0B8007947C3 /* AretctTests */,
 				DA4B0DD4230AC0B8007947C3 /* AretctUITests */,
+				DA4B0DEA230AC109007947C3 /* AretctAdmin */,
+				DA4B0DFD230AC10A007947C3 /* AretctAdminTests */,
+				DA4B0E08230AC10A007947C3 /* AretctAdminUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +408,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA4B0DD3230AC0B8007947C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0DE9230AC109007947C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */,
+				DA4B0E1A230AC1C4007947C3 /* Assets.xcassets in Resources */,
+				DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0DFC230AC10A007947C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0E07230AC10A007947C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +466,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA4B0DE7230AC109007947C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4B0DF0230AC109007947C3 /* ViewController.swift in Sources */,
+				DA4B0DEE230AC109007947C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0DFA230AC10A007947C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4B0E03230AC10A007947C3 /* AretctAdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4B0E05230AC10A007947C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4B0E0E230AC10A007947C3 /* AretctAdminUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +503,16 @@
 			isa = PBXTargetDependency;
 			target = DA4B0DB5230AC0B7007947C3 /* Aretct */;
 			targetProxy = DA4B0DD6230AC0B8007947C3 /* PBXContainerItemProxy */;
+		};
+		DA4B0E00230AC10A007947C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4B0DEA230AC109007947C3 /* AretctAdmin */;
+			targetProxy = DA4B0DFF230AC10A007947C3 /* PBXContainerItemProxy */;
+		};
+		DA4B0E0B230AC10A007947C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4B0DEA230AC109007947C3 /* AretctAdmin */;
+			targetProxy = DA4B0E0A230AC10A007947C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -305,6 +529,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				DA4B0DC3230AC0B7007947C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA4B0DF1230AC109007947C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4B0DF2230AC109007947C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4B0DF7230AC10A007947C3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -540,6 +780,118 @@
 			};
 			name = Release;
 		};
+		DA4B0E11230AC10A007947C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AretctAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA4B0E12230AC10A007947C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AretctAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA4B0E14230AC10A007947C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AretctAdminTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AretctAdmin.app/AretctAdmin";
+			};
+			name = Debug;
+		};
+		DA4B0E15230AC10A007947C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AretctAdminTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AretctAdmin.app/AretctAdmin";
+			};
+			name = Release;
+		};
+		DA4B0E17230AC10A007947C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AretctAdminUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AretctAdmin;
+			};
+			name = Debug;
+		};
+		DA4B0E18230AC10A007947C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AretctAdminUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AretctAdmin;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +927,33 @@
 			buildConfigurations = (
 				DA4B0DE5230AC0B8007947C3 /* Debug */,
 				DA4B0DE6230AC0B8007947C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4B0E10230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4B0E11230AC10A007947C3 /* Debug */,
+				DA4B0E12230AC10A007947C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4B0E13230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4B0E14230AC10A007947C3 /* Debug */,
+				DA4B0E15230AC10A007947C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4B0E16230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4B0E17230AC10A007947C3 /* Debug */,
+				DA4B0E18230AC10A007947C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
