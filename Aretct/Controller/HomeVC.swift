@@ -13,11 +13,15 @@ class HomeVC: UIViewController {
     //Outlets
     @IBOutlet weak var loginOutBtn: UIBarButtonItem!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if Auth.auth().currentUser == nil {
+            Auth.auth().signInAnonymously { (result, error) in
+                if let error = error {
+                    debugPrint(error)
+                }
+            }
+        }
     }
     
 
@@ -25,7 +29,7 @@ class HomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         //viewDidLoadはviewのインスタンス時に一度だけ呼ばれる
         //対照的にviewDidAppearはロードするたびに表示される
-        if let _ = Auth.auth().currentUser {
+        if let user = Auth.auth().currentUser, !user.isAnonymous {
             loginOutBtn.title = "Logout"
         } else {
             loginOutBtn.title = "Login"
@@ -40,15 +44,27 @@ class HomeVC: UIViewController {
     }
 
     @IBAction func loginOutClicked(_ sender: Any) {
-        if let _ = Auth.auth().currentUser {
-            do {
-                try Auth.auth().signOut()
-                presentLoginController()
-            } catch {
-                debugPrint(error.localizedDescription)
-            }
-        } else {
+        
+        guard let user = Auth.auth().currentUser else {return}
+        if user.isAnonymous {
+            //匿名ログインの場合、実際にはFirebaseセッションからログアウトさせないため
+            //匿名ログインはログインしたままにする
             presentLoginController()
+        } else {
+            //匿名ログイン以外でログアウトボタンを押した場合
+            do{
+                try Auth.auth().signOut()
+                //ログアウト後に、匿名ログイン状態に戻す必要があるから
+                Auth.auth().signInAnonymously { (result, error) in
+                    if let error = error {
+                        debugPrint(error)
+                    }
+                    self.presentLoginController()
+                    
+                }
+            } catch{
+                debugPrint(error)
+            }
         }
     }
     

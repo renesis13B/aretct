@@ -31,15 +31,24 @@ class RegisterVC: UIViewController {
             let username = usernameTxt.text, !username.isEmpty,
             let password = passwordTxt.text, !password.isEmpty else {return}
         
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+        activityIndicater.startAnimating()
+        
+        guard let authUser = Auth.auth().currentUser else {return}
+        //credential(資格情報)
+        let credential = EmailAuthProvider.credential(withEmail: email, password: password)
+        //承認されたプロパイダーを現在認証されているユーザーにリンクさせる
+        //今回はメールによる資格情報に一連のキーを与えている
+        authUser.link(with: credential) { (result, error) in
             //エラー処理
             if let error = error {
                 debugPrint(error)
                 return
             }
             
-           self.dismiss(animated: true, completion: nil)
+            self.activityIndicater.stopAnimating()
+            self.dismiss(animated: true, completion: nil)
         }
+        
     }
     
 }
