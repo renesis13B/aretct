@@ -38,7 +38,7 @@ class RegisterVC: UIViewController {
                 return
             }
             
-            print("Succese register new uset")
+           self.dismiss(animated: true, completion: nil)
         }
     }
     
