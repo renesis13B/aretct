@@ -8,14 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+
+    
     override func viewDidAppear(_ animated: Bool) {
+    }
+    
+    fileprivate func presentLoginController() {
         let storyboard = UIStoryboard(name: Storyboard.LoginStoryboard, bundle: nil)
         //storyboardの初期viewcontrollerを初期化する
         let contoroller = storyboard.instantiateViewController(withIdentifier: StoryboardId.LoginVC)

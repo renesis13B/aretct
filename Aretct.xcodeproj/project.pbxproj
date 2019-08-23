@@ -14,7 +14,7 @@
 		927F0049707C14D0D6C4793D /* Pods_AretctAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD0420851B96DA7100489A /* Pods_AretctAdmin.framework */; };
 		AF694561AC93DC4206D20DE6 /* Pods_AretctAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8CF662ED4B5E2543CA7F50 /* Pods_AretctAdminTests.framework */; };
 		DA4B0DBA230AC0B7007947C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */; };
-		DA4B0DBC230AC0B7007947C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* ViewController.swift */; };
+		DA4B0DBC230AC0B7007947C3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */; };
 		DA4B0DBF230AC0B7007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DBD230AC0B7007947C3 /* Main.storyboard */; };
 		DA4B0DC1230AC0B7007947C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */; };
 		DA4B0DC4230AC0B7007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC2230AC0B7007947C3 /* LaunchScreen.storyboard */; };
@@ -34,6 +34,7 @@
 		DA4B0E28230B11CF007947C3 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E27230B11CF007947C3 /* RegisterVC.swift */; };
 		DA4B0E2B23101A78007947C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2A23101A78007947C3 /* Constants.swift */; };
 		DA4B0E2E231021DD007947C3 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2D231021DD007947C3 /* RoundedViews.swift */; };
+		DA4B0E30231031E8007947C3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2F231031E8007947C3 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,7 @@
 		D13F9D9E9A195D519CC24A6A /* Pods-AretctAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AretctAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		DA4B0DB6230AC0B7007947C3 /* Aretct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aretct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA4B0DBB230AC0B7007947C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DA4B0DBE230AC0B7007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA4B0DC3230AC0B7007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		DA4B0E27230B11CF007947C3 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		DA4B0E2A23101A78007947C3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DA4B0E2D231021DD007947C3 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		DA4B0E2F231031E8007947C3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E337F8ECB6BD087570C0B1F1 /* Pods_Aretct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aretct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CEC648DA7DE319313B6E9C /* Pods-Aretct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aretct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aretct/Pods-Aretct.debug.xcconfig"; sourceTree = "<group>"; };
 		E61FD73E9B53952FAE2BF46E /* Pods-AretctUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AretctUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AretctUITests/Pods-AretctUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -296,7 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */,
-				DA4B0DBB230AC0B7007947C3 /* ViewController.swift */,
+				DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */,
 				DA4B0E25230B11A0007947C3 /* LoginVC.swift */,
 				DA4B0E27230B11CF007947C3 /* RegisterVC.swift */,
 			);
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				DA4B0E2A23101A78007947C3 /* Constants.swift */,
+				DA4B0E2F231031E8007947C3 /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -776,7 +779,8 @@
 			files = (
 				DA4B0E2E231021DD007947C3 /* RoundedViews.swift in Sources */,
 				DA4B0E2B23101A78007947C3 /* Constants.swift in Sources */,
-				DA4B0DBC230AC0B7007947C3 /* ViewController.swift in Sources */,
+				DA4B0E30231031E8007947C3 /* Extension.swift in Sources */,
+				DA4B0DBC230AC0B7007947C3 /* HomeVC.swift in Sources */,
 				DA4B0E28230B11CF007947C3 /* RegisterVC.swift in Sources */,
 				DA4B0DBA230AC0B7007947C3 /* AppDelegate.swift in Sources */,
 				DA4B0E26230B11A0007947C3 /* LoginVC.swift in Sources */,

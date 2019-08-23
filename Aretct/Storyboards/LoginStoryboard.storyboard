@@ -43,7 +43,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-jX-UdO">
                                         <rect key="frame" x="0.0" y="132" width="335" height="40"/>
@@ -54,6 +54,9 @@
                                         <state key="normal" title="パスワードを忘れた方">
                                             <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPassClicked:" destination="7Z0-b0-Nhc" eventType="touchUpInside" id="VjM-H8-Zd8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88W-rn-8rk" customClass="RoundedButton" customModule="Aretct" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="184" width="335" height="40"/>
@@ -65,6 +68,9 @@
                                         <state key="normal" title="ログイン">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="7Z0-b0-Nhc" eventType="touchUpInside" id="JQc-UF-v08"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOX-kB-FEA" customClass="RoundedButton" customModule="Aretct" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="236" width="335" height="40"/>
@@ -84,6 +90,9 @@
                                         <rect key="frame" x="0.0" y="288" width="335" height="29"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                         <state key="normal" title="ログインせずに使う"/>
+                                        <connections>
+                                            <action selector="guestClicked:" destination="7Z0-b0-Nhc" eventType="touchUpInside" id="cXY-ch-VSw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -111,6 +120,11 @@
                         <viewLayoutGuide key="safeArea" id="ham-Yz-2p1"/>
                     </view>
                     <navigationItem key="navigationItem" id="N44-m2-Ns9"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AJB-Sw-1b9" id="37i-U8-FuL"/>
+                        <outlet property="emailTxt" destination="zMl-UO-xdC" id="2Ud-4r-4d5"/>
+                        <outlet property="passTxt" destination="5Uk-iI-d8U" id="0Hc-Eu-Msb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eyp-qi-FCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
