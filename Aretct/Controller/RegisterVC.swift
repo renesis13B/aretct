@@ -26,10 +26,19 @@ class RegisterVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //Action
     @IBAction func registerNewMemberClicked(_ sender: Any) {
         guard let email = emailTxt.text, !email.isEmpty,
             let username = usernameTxt.text, !username.isEmpty,
-            let password = passwordTxt.text, !password.isEmpty else {return}
+            let password = passwordTxt.text, !password.isEmpty else {
+                simpleAlert(title: "Error", msg: "Please fill out all fields.")
+                return
+        }
+        
+        guard let confirmPass = confirmPasswordTxt.text, confirmPass == password else {
+            simpleAlert(title: "Error", msg: "Password do not match")
+            return
+        }
         
         activityIndicater.startAnimating()
         
@@ -42,6 +51,7 @@ class RegisterVC: UIViewController {
             //エラー処理
             if let error = error {
                 debugPrint(error)
+                self.handleFireAuthError(error: error)
                 return
             }
             

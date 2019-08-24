@@ -18,13 +18,12 @@ class HomeVC: UIViewController {
         if Auth.auth().currentUser == nil {
             Auth.auth().signInAnonymously { (result, error) in
                 if let error = error {
+                    self.handleFireAuthError(error: error)
                     debugPrint(error)
                 }
             }
         }
     }
-    
-
     
     override func viewDidAppear(_ animated: Bool) {
         //viewDidLoadはviewのインスタンス時に一度だけ呼ばれる
@@ -43,6 +42,7 @@ class HomeVC: UIViewController {
         present(contoroller, animated: true, completion: nil)
     }
 
+    //Action
     @IBAction func loginOutClicked(_ sender: Any) {
         
         guard let user = Auth.auth().currentUser else {return}
@@ -57,12 +57,14 @@ class HomeVC: UIViewController {
                 //ログアウト後に、匿名ログイン状態に戻す必要があるから
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error {
+                        self.handleFireAuthError(error: error)
                         debugPrint(error)
                     }
                     self.presentLoginController()
                     
                 }
             } catch{
+                self.handleFireAuthError(error: error)
                 debugPrint(error)
             }
         }

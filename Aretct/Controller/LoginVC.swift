@@ -18,16 +18,20 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
     }
     
+    //Actions
     @IBAction func forgotPassClicked(_ sender: Any) {
     }
     
     @IBAction func loginClicked(_ sender: Any) {
+        //""だとisEmptyは trueになる
         guard let email = emailTxt.text, email.isNotEmpty,
-            let password = passTxt.text, password.isNotEmpty else {return}
+            let password = passTxt.text, password.isNotEmpty else {
+                simpleAlert(title: "Error", msg: "Please fill out all fields")
+                return
+                
+        }
         
         activityIndicator.startAnimating()
         
@@ -36,6 +40,7 @@ class LoginVC: UIViewController {
             
             if let error = error {
                 debugPrint(error)
+                self.handleFireAuthError(error: error)
                 self.activityIndicator.stopAnimating()
                 return
             }
