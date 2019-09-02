@@ -44,7 +44,7 @@ class LoginVC: UIViewController {
             
             if let error = error {
                 debugPrint(error)
-                self.handleFireAuthError(error: error)
+                Auth.auth().handleFireAuthError(error: error, vc: self)
                 self.activityIndicator.stopAnimating()
                 return
             }
@@ -55,5 +55,6 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func guestClicked(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }

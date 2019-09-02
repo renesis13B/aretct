@@ -13,6 +13,20 @@
 		882C49D658AAE040F941FE45 /* Pods_AretctTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347AA22B7387C598AAD204FB /* Pods_AretctTests.framework */; };
 		927F0049707C14D0D6C4793D /* Pods_AretctAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD0420851B96DA7100489A /* Pods_AretctAdmin.framework */; };
 		AF694561AC93DC4206D20DE6 /* Pods_AretctAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8CF662ED4B5E2543CA7F50 /* Pods_AretctAdminTests.framework */; };
+		DA317ABE2314044A0001C9E7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */; };
+		DA317ABF231406DE0001C9E7 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2D231021DD007947C3 /* RoundedViews.swift */; };
+		DA317AC0231407000001C9E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2A23101A78007947C3 /* Constants.swift */; };
+		DA317AC1231407030001C9E7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2F231031E8007947C3 /* Extension.swift */; };
+		DA317AC2231407340001C9E7 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
+		DA317AC3231407DA0001C9E7 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */; };
+		DA317AC4231407DA0001C9E7 /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */; };
+		DA317AC6231409740001C9E7 /* AddEditCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317AC5231409740001C9E7 /* AddEditCategoryVC.swift */; };
+		DA317AC92316E40F0001C9E7 /* AdminProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317AC82316E40F0001C9E7 /* AdminProductsVC.swift */; };
+		DA317ACB2316EC810001C9E7 /* AddEditProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317ACA2316EC810001C9E7 /* AddEditProductsVC.swift */; };
+		DA317ACD2319609C0001C9E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317ACC2319609C0001C9E7 /* User.swift */; };
+		DA317ACE2319609C0001C9E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317ACC2319609C0001C9E7 /* User.swift */; };
+		DA317AD123197B490001C9E7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317AD023197B490001C9E7 /* UserService.swift */; };
+		DA317AD223197B490001C9E7 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317AD023197B490001C9E7 /* UserService.swift */; };
 		DA4B0DBA230AC0B7007947C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */; };
 		DA4B0DBC230AC0B7007947C3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */; };
 		DA4B0DBF230AC0B7007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DBD230AC0B7007947C3 /* Main.storyboard */; };
@@ -21,7 +35,7 @@
 		DA4B0DCF230AC0B8007947C3 /* AretctTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DCE230AC0B8007947C3 /* AretctTests.swift */; };
 		DA4B0DDA230AC0B8007947C3 /* AretctUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */; };
 		DA4B0DEE230AC109007947C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DED230AC109007947C3 /* AppDelegate.swift */; };
-		DA4B0DF0230AC109007947C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DEF230AC109007947C3 /* ViewController.swift */; };
+		DA4B0DF0230AC109007947C3 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DEF230AC109007947C3 /* AdminHomeVC.swift */; };
 		DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF1230AC109007947C3 /* Main.storyboard */; };
 		DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */; };
 		DA4B0E03230AC10A007947C3 /* AretctAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */; };
@@ -37,6 +51,24 @@
 		DA4B0E30231031E8007947C3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2F231031E8007947C3 /* Extension.swift */; };
 		DA4B0E3423111C34007947C3 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */; };
 		DA4B0E3523111C34007947C3 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */; };
+		DA4B0E372311309C007947C3 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E362311309C007947C3 /* Firebase+Utils.swift */; };
+		DA4B0E3823113186007947C3 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E362311309C007947C3 /* Firebase+Utils.swift */; };
+		DA4B0E3A23115CDD007947C3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E3923115CDD007947C3 /* Category.swift */; };
+		DA4B0E3B23115CEE007947C3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E3923115CDD007947C3 /* Category.swift */; };
+		DA4B0E3E23115E93007947C3 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E3C23115E93007947C3 /* CategoryCell.swift */; };
+		DA4B0E3F23115E93007947C3 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E3C23115E93007947C3 /* CategoryCell.swift */; };
+		DA4B0E4023115E93007947C3 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E3D23115E93007947C3 /* CategoryCell.xib */; };
+		DA4B0E4123115E93007947C3 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E3D23115E93007947C3 /* CategoryCell.xib */; };
+		DA4B0E4423117835007947C3 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E4323117835007947C3 /* ProductsVC.swift */; };
+		DA4B0E4523117835007947C3 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E4323117835007947C3 /* ProductsVC.swift */; };
+		DA4B0E472311795C007947C3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E462311795C007947C3 /* Product.swift */; };
+		DA4B0E482311795C007947C3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E462311795C007947C3 /* Product.swift */; };
+		DA4B0E4B23117AD4007947C3 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E4923117AD4007947C3 /* ProductCell.swift */; };
+		DA4B0E4C23117AD4007947C3 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E4923117AD4007947C3 /* ProductCell.swift */; };
+		DA4B0E4D23117AD4007947C3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E4A23117AD4007947C3 /* ProductCell.xib */; };
+		DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E4A23117AD4007947C3 /* ProductCell.xib */; };
+		DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
+		DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +115,11 @@
 		CB8BB071548594FFEB03AEAD /* Pods-AretctAdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AretctAdminTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AretctAdminTests/Pods-AretctAdminTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CECD0420851B96DA7100489A /* Pods_AretctAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AretctAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13F9D9E9A195D519CC24A6A /* Pods-AretctAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AretctAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		DA317AC5231409740001C9E7 /* AddEditCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCategoryVC.swift; sourceTree = "<group>"; };
+		DA317AC82316E40F0001C9E7 /* AdminProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProductsVC.swift; sourceTree = "<group>"; };
+		DA317ACA2316EC810001C9E7 /* AddEditProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditProductsVC.swift; sourceTree = "<group>"; };
+		DA317ACC2319609C0001C9E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA317AD023197B490001C9E7 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		DA4B0DB6230AC0B7007947C3 /* Aretct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aretct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -98,7 +135,7 @@
 		DA4B0DDB230AC0B8007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4B0DEB230AC109007947C3 /* AretctAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AretctAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4B0DED230AC109007947C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA4B0DEF230AC109007947C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA4B0DEF230AC109007947C3 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
 		DA4B0DF2230AC109007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA4B0DF7230AC10A007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4B0DF9230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +155,16 @@
 		DA4B0E2F231031E8007947C3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
+		DA4B0E362311309C007947C3 /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		DA4B0E3923115CDD007947C3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DA4B0E3C23115E93007947C3 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		DA4B0E3D23115E93007947C3 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		DA4B0E4323117835007947C3 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		DA4B0E462311795C007947C3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DA4B0E4923117AD4007947C3 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		DA4B0E4A23117AD4007947C3 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
+		DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailVC.xib; sourceTree = "<group>"; };
 		E337F8ECB6BD087570C0B1F1 /* Pods_Aretct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aretct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CEC648DA7DE319313B6E9C /* Pods-Aretct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aretct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aretct/Pods-Aretct.debug.xcconfig"; sourceTree = "<group>"; };
 		E61FD73E9B53952FAE2BF46E /* Pods-AretctUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AretctUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AretctUITests/Pods-AretctUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +244,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA317AC7231409890001C9E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B0DED230AC109007947C3 /* AppDelegate.swift */,
+				DA4B0DEF230AC109007947C3 /* AdminHomeVC.swift */,
+				DA317AC5231409740001C9E7 /* AddEditCategoryVC.swift */,
+				DA317AC82316E40F0001C9E7 /* AdminProductsVC.swift */,
+				DA317ACA2316EC810001C9E7 /* AddEditProductsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA317ACF231971AD0001C9E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA317AD023197B490001C9E7 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DA4B0DAD230AC0B7007947C3 = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +296,8 @@
 		DA4B0DB8230AC0B7007947C3 /* Aretct */ = {
 			isa = PBXGroup;
 			children = (
+				DA317ACF231971AD0001C9E7 /* Services */,
 				DA4B0E3123111BD7007947C3 /* XIBs */,
-				DA4B0E23230B10F0007947C3 /* Model */,
 				DA4B0E22230B10E4007947C3 /* View */,
 				DA4B0E21230B10BA007947C3 /* Controller */,
 				DA4B0E24230B1106007947C3 /* Storyboards */,
@@ -261,8 +328,7 @@
 		DA4B0DEC230AC109007947C3 /* AretctAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				DA4B0DED230AC109007947C3 /* AppDelegate.swift */,
-				DA4B0DEF230AC109007947C3 /* ViewController.swift */,
+				DA317AC7231409890001C9E7 /* Controller */,
 				DA4B0DF1230AC109007947C3 /* Main.storyboard */,
 				DA4B0E1F230B0986007947C3 /* GoogleService-Info.plist */,
 				DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */,
@@ -292,6 +358,8 @@
 		DA4B0E19230AC141007947C3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DA4B0E4223115EAD007947C3 /* XIBs */,
+				DA4B0E23230B10F0007947C3 /* Model */,
 				DA4B0E2C231021B7007947C3 /* View */,
 				DA4B0E2923101A1B007947C3 /* Utils */,
 				DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */,
@@ -303,9 +371,11 @@
 			isa = PBXGroup;
 			children = (
 				DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */,
-				DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */,
+				DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */,
 				DA4B0E25230B11A0007947C3 /* LoginVC.swift */,
 				DA4B0E27230B11CF007947C3 /* RegisterVC.swift */,
+				DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */,
+				DA4B0E4323117835007947C3 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +390,9 @@
 		DA4B0E23230B10F0007947C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA4B0E3923115CDD007947C3 /* Category.swift */,
+				DA4B0E462311795C007947C3 /* Product.swift */,
+				DA317ACC2319609C0001C9E7 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,6 +412,7 @@
 			children = (
 				DA4B0E2A23101A78007947C3 /* Constants.swift */,
 				DA4B0E2F231031E8007947C3 /* Extension.swift */,
+				DA4B0E362311309C007947C3 /* Firebase+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -346,7 +420,9 @@
 		DA4B0E2C231021B7007947C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA4B0E3C23115E93007947C3 /* CategoryCell.swift */,
 				DA4B0E2D231021DD007947C3 /* RoundedViews.swift */,
+				DA4B0E4923117AD4007947C3 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +432,16 @@
 			children = (
 				DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */,
 				DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */,
+				DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		DA4B0E4223115EAD007947C3 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B0E4A23117AD4007947C3 /* ProductCell.xib */,
+				DA4B0E3D23115E93007947C3 /* CategoryCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -553,9 +639,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4B0DC4230AC0B7007947C3 /* LaunchScreen.storyboard in Resources */,
+				DA4B0E4D23117AD4007947C3 /* ProductCell.xib in Resources */,
+				DA4B0E4023115E93007947C3 /* CategoryCell.xib in Resources */,
 				DA4B0DC1230AC0B7007947C3 /* Assets.xcassets in Resources */,
 				DA4B0DBF230AC0B7007947C3 /* Main.storyboard in Resources */,
 				DA4B0E1E230B0758007947C3 /* GoogleService-Info.plist in Resources */,
+				DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */,
 				DA4B0E3523111C34007947C3 /* ForgotPasswordVC.xib in Resources */,
 				DA4B0E1C230AED7A007947C3 /* LoginStoryboard.storyboard in Resources */,
 			);
@@ -579,10 +668,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4B0E4123115E93007947C3 /* CategoryCell.xib in Resources */,
 				DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */,
 				DA4B0E20230B0986007947C3 /* GoogleService-Info.plist in Resources */,
+				DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */,
 				DA4B0E1A230AC1C4007947C3 /* Assets.xcassets in Resources */,
 				DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */,
+				DA317AC4231407DA0001C9E7 /* ProductDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,37 +700,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Aretct/Pods-Aretct-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aretct/Pods-Aretct-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aretct/Pods-Aretct-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aretct/Pods-Aretct-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aretct/Pods-Aretct-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		47E80D1DEB51654F07656B03 /* [CP] Check Pods Manifest.lock */ = {
@@ -682,35 +753,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE1952ACE5615DB2469EE474 /* [CP] Check Pods Manifest.lock */ = {
@@ -792,14 +844,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4B0E4423117835007947C3 /* ProductsVC.swift in Sources */,
+				DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */,
+				DA4B0E372311309C007947C3 /* Firebase+Utils.swift in Sources */,
+				DA4B0E3A23115CDD007947C3 /* Category.swift in Sources */,
+				DA317ACD2319609C0001C9E7 /* User.swift in Sources */,
 				DA4B0E2E231021DD007947C3 /* RoundedViews.swift in Sources */,
+				DA317AD123197B490001C9E7 /* UserService.swift in Sources */,
 				DA4B0E2B23101A78007947C3 /* Constants.swift in Sources */,
+				DA4B0E4B23117AD4007947C3 /* ProductCell.swift in Sources */,
 				DA4B0E30231031E8007947C3 /* Extension.swift in Sources */,
 				DA4B0DBC230AC0B7007947C3 /* HomeVC.swift in Sources */,
 				DA4B0E28230B11CF007947C3 /* RegisterVC.swift in Sources */,
 				DA4B0DBA230AC0B7007947C3 /* AppDelegate.swift in Sources */,
 				DA4B0E3423111C34007947C3 /* ForgotPasswordVC.swift in Sources */,
 				DA4B0E26230B11A0007947C3 /* LoginVC.swift in Sources */,
+				DA4B0E3E23115E93007947C3 /* CategoryCell.swift in Sources */,
+				DA4B0E472311795C007947C3 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,8 +884,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4B0DF0230AC109007947C3 /* ViewController.swift in Sources */,
+				DA4B0E4523117835007947C3 /* ProductsVC.swift in Sources */,
+				DA317AC0231407000001C9E7 /* Constants.swift in Sources */,
+				DA4B0E3823113186007947C3 /* Firebase+Utils.swift in Sources */,
+				DA317AC1231407030001C9E7 /* Extension.swift in Sources */,
+				DA317ABF231406DE0001C9E7 /* RoundedViews.swift in Sources */,
+				DA4B0DF0230AC109007947C3 /* AdminHomeVC.swift in Sources */,
+				DA317ACB2316EC810001C9E7 /* AddEditProductsVC.swift in Sources */,
+				DA317AC92316E40F0001C9E7 /* AdminProductsVC.swift in Sources */,
+				DA317ABE2314044A0001C9E7 /* HomeVC.swift in Sources */,
+				DA317AC6231409740001C9E7 /* AddEditCategoryVC.swift in Sources */,
 				DA4B0DEE230AC109007947C3 /* AppDelegate.swift in Sources */,
+				DA317AC3231407DA0001C9E7 /* ForgotPasswordVC.swift in Sources */,
+				DA4B0E3B23115CEE007947C3 /* Category.swift in Sources */,
+				DA317AD223197B490001C9E7 /* UserService.swift in Sources */,
+				DA4B0E4C23117AD4007947C3 /* ProductCell.swift in Sources */,
+				DA317ACE2319609C0001C9E7 /* User.swift in Sources */,
+				DA4B0E3F23115E93007947C3 /* CategoryCell.swift in Sources */,
+				DA317AC2231407340001C9E7 /* ProductDetailVC.swift in Sources */,
+				DA4B0E482311795C007947C3 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,6 +1106,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Aretct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1046,6 +1125,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Aretct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1146,6 +1226,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AretctAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1164,6 +1245,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AretctAdmin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

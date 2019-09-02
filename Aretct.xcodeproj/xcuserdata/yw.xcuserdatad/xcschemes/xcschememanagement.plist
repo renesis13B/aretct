@@ -6,13 +6,50 @@
 	<dict>
 		<key>Aretct.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 		<key>AretctAdmin.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DA4B0DB5230AC0B7007947C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA4B0DC9230AC0B8007947C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA4B0DD4230AC0B8007947C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA4B0DEA230AC109007947C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA4B0DFD230AC10A007947C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA4B0E08230AC10A007947C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
