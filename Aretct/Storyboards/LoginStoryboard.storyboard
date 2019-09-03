@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_left1" translatesAutoresizingMaskIntoConstraints="NO" id="IKR-Jc-gbv">
-                                <rect key="frame" x="0.0" y="88" width="375.00000000000045" height="724"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-O6-G9F">
                                 <rect key="frame" x="20" y="108" width="335" height="369"/>
@@ -86,7 +86,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="loginClicked:" destination="7Z0-b0-Nhc" eventType="touchUpInside" id="5I0-C7-h37"/>
+                                            <action selector="fbLoginClicked:" destination="7Z0-b0-Nhc" eventType="touchUpInside" id="3PY-lc-nHH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOX-kB-FEA" customClass="RoundedButton" customModule="Aretct" customModuleProvider="target">
@@ -100,7 +100,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="6Ws-P2-txh" kind="show" id="X7x-AU-tOJ"/>
+                                            <segue destination="6Ws-P2-txh" kind="show" identifier="ToRegisterAccount" id="X7x-AU-tOJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAp-xk-aIJ">
@@ -221,6 +221,13 @@
                                 <rect key="frame" x="169" y="397" width="37" height="37"/>
                                 <color key="color" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-Y4-NHB">
+                                <rect key="frame" x="137.66666666666666" y="454" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5P7-re-MK8"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ens-IH-47B"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -229,10 +236,12 @@
                             <constraint firstItem="ldq-Xs-dqe" firstAttribute="leading" secondItem="5WZ-k0-ped" secondAttribute="leading" constant="20" id="Bgq-mF-bKU"/>
                             <constraint firstItem="k9u-xE-FAK" firstAttribute="leading" secondItem="5WZ-k0-ped" secondAttribute="leading" id="Phs-eg-SyS"/>
                             <constraint firstItem="5WZ-k0-ped" firstAttribute="trailing" secondItem="ldq-Xs-dqe" secondAttribute="trailing" constant="20" id="RIB-1l-fmn"/>
+                            <constraint firstItem="Hh9-Y4-NHB" firstAttribute="centerX" secondItem="yYr-CI-kzM" secondAttribute="centerX" id="Y3u-ug-Jcd"/>
                             <constraint firstAttribute="bottom" secondItem="k9u-xE-FAK" secondAttribute="bottom" id="akg-th-gDk"/>
                             <constraint firstItem="ldq-Xs-dqe" firstAttribute="top" secondItem="5WZ-k0-ped" secondAttribute="top" constant="20" id="dW9-Ye-eeA"/>
                             <constraint firstItem="9pY-fu-hpq" firstAttribute="top" secondItem="ldq-Xs-dqe" secondAttribute="bottom" constant="12" id="fla-1H-peJ"/>
                             <constraint firstItem="k9u-xE-FAK" firstAttribute="top" secondItem="5WZ-k0-ped" secondAttribute="top" id="rfK-vY-2N9"/>
+                            <constraint firstItem="Hh9-Y4-NHB" firstAttribute="top" secondItem="9pY-fu-hpq" secondAttribute="bottom" constant="20" id="tLi-dr-Sro"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5WZ-k0-ped"/>
                     </view>
@@ -240,6 +249,7 @@
                         <outlet property="activityIndicater" destination="9pY-fu-hpq" id="jjf-Ur-tJZ"/>
                         <outlet property="confirmPasswordTxt" destination="QNi-ZS-wPQ" id="YQK-43-4hl"/>
                         <outlet property="emailTxt" destination="tHV-8S-b9b" id="A8M-iT-LXB"/>
+                        <outlet property="fbAvatar" destination="Hh9-Y4-NHB" id="6wa-om-6Gp"/>
                         <outlet property="passwordTxt" destination="rsg-SN-MhU" id="fBN-mk-0pM"/>
                         <outlet property="usernameTxt" destination="fIu-8k-uoq" id="Tb8-8g-QQl"/>
                     </connections>

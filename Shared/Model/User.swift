@@ -8,11 +8,16 @@
 
 import Foundation
 
-struct User {
+struct User : Codable {
     var id: String
     var email: String
     var username: String
     var stripeId: String
+    
+    var avatarUrl: String = ""
+    var hasSetupAccount: Bool = false
+    var isGuest: Bool = false
+    
     
     init(id: String = "",
          email: String = "",

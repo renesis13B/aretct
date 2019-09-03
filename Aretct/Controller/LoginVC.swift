@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
+import FirebaseFirestore
 
 class LoginVC: UIViewController {
     //Outlets
@@ -15,6 +17,10 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passTxt: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    
+    //Variables
+    let loginManager = LoginManager()
+    var firstTimeFbLogin = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +62,92 @@ class LoginVC: UIViewController {
     
     @IBAction func guestClicked(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    @IBAction func fbLoginClicked(_ sender: Any) {
+        loginManager.logIn(permissions: ["email"], from: self) { (result, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+            } else if result?.isCancelled ?? true {
+                
+            } else {
+              self.signinFirebaseFacebook()
+            }
+        }
+    }
+    
+    func signinFirebaseFacebook() {
+        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let isNewUser = authResult?.additionalUserInfo?.isNewUser {
+                if isNewUser {
+                    self.handleNewUser()
+                } else {
+                    self.handlePotensialFirstTImeFbLogin()
+                }
+            }
+        }
+    }
+    
+    func handlePotensialFirstTImeFbLogin() {
+        guard  let user = Auth.auth().currentUser else { return }
+        Firestore.firestore().collection("users").document(user.uid).getDocument { (snap, error) in
+            if let data = snap?.data() {
+                guard let hasSetup = data["hasSetupAccount"] as? Bool else {return}
+                if hasSetup {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    self.firstTimeFbLogin = true
+                    self.presentFirstTimeAlert()
+                }
+            }
+        }
+    }
+    
+    func handleNewUser() {
+        firstTimeFbLogin = true
+        guard let user = Auth.auth().currentUser else {return}
+        
+        
+        
+        var userData = [String: Any]()
+        userData = [
+            "email": "",
+            "username": "",
+            "avaturUrl": "",
+            "hasSetupAccount": false,
+            "isGuest": false,
+        ]
+        
+        Firestore.firestore().collection("users").document(user.uid).setData(userData) { (error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+//                self.handleFireAuthError(error)
+                return
+            }
+            self.presentFirstTimeAlert()
+        }
+    }
+    
+    func presentFirstTimeAlert() {
+        let alert = UIAlertController(title: "Welcome", message: "Look like you are new here. Let's get you set up", preferredStyle: .alert)
+        let notNow = UIAlertAction(title: "Not Now", style: .cancel) { (alert) in
+        }
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (alert) in
+            self.performSegue(withIdentifier: Segues.ToRegisterAccount, sender: self)
+            
+        }
+        alert.addAction(notNow)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.ToRegisterAccount {
+            if let destination = segue.destination as? RegisterVC {
+                destination.firstTimeFbLogin = firstTimeFbLogin
+            }
+        }
     }
 }
