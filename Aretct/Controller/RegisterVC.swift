@@ -21,12 +21,14 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var activityIndicater: UIActivityIndicatorView!
     @IBOutlet weak var fbAvatar: UIImageView!
     
+    @IBOutlet weak var linkFbBtn: RoundedButton!
     //Variables
-    var firstTimeFbLogin = false
+     let loginManager = LoginManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if firstTimeFbLogin {
+        if AccessToken.current != nil {
             fetchFbData()
         }
     }
@@ -102,6 +104,7 @@ class RegisterVC: UIViewController {
     
     
     func fetchFbData() {
+        linkFbBtn.setTitle("Unlink Facebook Account", for: .normal)
         let request = GraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email, picture.type(large)"], httpMethod: HTTPMethod(rawValue: "GET"))
         request.start { (connection, result, error) in
             if let error = error {
@@ -124,6 +127,23 @@ class RegisterVC: UIViewController {
             
             self.emailTxt.text = email
             self.usernameTxt.text = firstName
+        }
+    }
+    
+    
+    @IBAction func linkWithFbClicked(_ sender: Any) {
+        if AccessToken.current != nil {
+           
+        } else {
+            loginManager.logIn(permissions: ["email"], from: self) { (result, error) in
+                if let error = error {
+                    debugPrint(error.localizedDescription)
+                } else if result?.isCancelled ?? true {
+                    
+                } else {
+                    self.fetchFbData()
+                }
+            }
         }
     }
 }
