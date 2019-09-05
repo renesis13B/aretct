@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
 
 class HomeVC: UIViewController {
     //Outlets
@@ -20,6 +21,7 @@ class HomeVC: UIViewController {
     var selectedCategory: Category!
     var db : Firestore!
     var listener : ListenerRegistration!
+    let loginManager = LoginManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,6 +134,7 @@ class HomeVC: UIViewController {
             //匿名ログイン以外でログアウトボタンを押した場合
             do{
                 try Auth.auth().signOut()
+                loginManager.logOut()
                 //ログアウト後に、匿名ログイン状態に戻す必要があるから
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error {

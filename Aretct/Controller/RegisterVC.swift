@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
+import Kingfisher
 
 class RegisterVC: UIViewController {
     
@@ -17,13 +19,18 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var confirmPasswordTxt: UITextField!
     @IBOutlet weak var activityIndicater: UIActivityIndicatorView!
+    @IBOutlet weak var fbAvatar: UIImageView!
     
+    @IBOutlet weak var linkFbBtn: RoundedButton!
+    //Variables
+     let loginManager = LoginManager()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if AccessToken.current != nil {
+            fetchFbData()
+        }
     }
     
     //Action
@@ -95,4 +102,48 @@ class RegisterVC: UIViewController {
         }
     }
     
+    
+    func fetchFbData() {
+        linkFbBtn.setTitle("Unlink Facebook Account", for: .normal)
+        let request = GraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email, picture.type(large)"], httpMethod: HTTPMethod(rawValue: "GET"))
+        request.start { (connection, result, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+                return
+            }
+            
+            guard let dictionaly = result as? [String: Any] else {return}
+            guard let firstName = dictionaly["first_name"] as? String,
+                let lastName = dictionaly["last_name"] as? String,
+                let email = dictionaly["email"] as? String else {return}
+            
+            guard let pictureObject = dictionaly["picture"] as? [String: Any],
+                let pictureData = pictureObject["data"] as? [String: Any],
+                let urlString = pictureData["url"] as? String else {return}
+            
+            let url = URL(string: urlString)
+            let processor = RoundCornerImageProcessor(cornerRadius: 20)
+            self.fbAvatar.kf.setImage(with: url, placeholder: nil, options: [.processor(processor), .transition(.fade(0.2))], progressBlock: nil, completionHandler: nil)
+            
+            self.emailTxt.text = email
+            self.usernameTxt.text = firstName
+        }
+    }
+    
+    
+    @IBAction func linkWithFbClicked(_ sender: Any) {
+        if AccessToken.current != nil {
+           
+        } else {
+            loginManager.logIn(permissions: ["email"], from: self) { (result, error) in
+                if let error = error {
+                    debugPrint(error.localizedDescription)
+                } else if result?.isCancelled ?? true {
+                    
+                } else {
+                    self.fetchFbData()
+                }
+            }
+        }
+    }
 }
