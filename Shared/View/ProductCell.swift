@@ -4,6 +4,7 @@ import Kingfisher
 
 protocol ProductCellDelegate : class {
     func productFavorited(product: Product)
+    func productAddToCart(product: Product)
 }
 
 class ProductCell: UITableViewCell {
@@ -50,6 +51,7 @@ class ProductCell: UITableViewCell {
     }
     
     @IBAction func addCartClicked(_ sender: Any) {
+        delegate?.productAddToCart(product: product)
     }
     
     
