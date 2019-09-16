@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Stripe
+import FirebaseFunctions
 
 class CheckoutVC: UIViewController, CartItemDelegate {
 
@@ -23,10 +25,14 @@ class CheckoutVC: UIViewController, CartItemDelegate {
     @IBOutlet weak var totalLbl: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    // Variables
+    var paymentContext: STPPaymentContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupPaymentInfo()
+        setupStripeConfig()
     }
     
     func setupTableView() {
@@ -41,13 +47,29 @@ class CheckoutVC: UIViewController, CartItemDelegate {
         shippingCostLbl.text = StripeCart.shippingFees.penniesToFormattedCurrency()
         totalLbl.text = StripeCart.total.penniesToFormattedCurrency()
     }
+    
+    func setupStripeConfig() {
+        let config = STPPaymentConfiguration.shared()
+        config.createCardSources = true
+        config.requiredBillingAddressFields = .none
+        config.requiredShippingAddressFields = [.postalAddress]
+        
+        let customerContext = STPCustomerContext(keyProvider: StripeApi)
+        paymentContext = STPPaymentContext(customerContext: customerContext, configuration: config, theme: .default())
+        
+        paymentContext.paymentAmount = StripeCart.total
+        paymentContext.delegate = self
+        paymentContext.hostViewController = self
+    }
 
     @IBAction func placeOrderClicked(_ sender: Any) {
     }
     @IBAction func paymentMethodClicked(_ sender: Any) {
+        paymentContext.pushPaymentOptionsViewController()
     }
     
     @IBAction func shippingMethodClicked(_ sender: Any) {
+        paymentContext.pushShippingViewController()
     }
     
     func removeItem(product: Product) {
@@ -55,6 +77,26 @@ class CheckoutVC: UIViewController, CartItemDelegate {
         tableView.reloadData()
         setupPaymentInfo()
     }
+}
+
+extension CheckoutVC: STPPaymentContextDelegate {
+    func paymentContextDidChange(_ paymentContext: STPPaymentContext) {
+        
+    }
+    
+    func paymentContext(_ paymentContext: STPPaymentContext, didFailToLoadWithError error: Error) {
+      
+    }
+    
+    func paymentContext(_ paymentContext: STPPaymentContext, didCreatePaymentResult paymentResult: STPPaymentResult, completion: @escaping STPErrorBlock) {
+        
+    }
+    
+    func paymentContext(_ paymentContext: STPPaymentContext, didFinishWith status: STPPaymentStatus, error: Error?) {
+        
+    }
+    
+    
 }
 
 extension CheckoutVC : UITableViewDelegate, UITableViewDataSource {
