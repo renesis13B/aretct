@@ -99,15 +99,69 @@ extension CheckoutVC: STPPaymentContextDelegate {
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didFailToLoadWithError error: Error) {
-      
+        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            self.navigationController?.popViewController(animated: true)
+        }
+        let retry = UIAlertAction(title: "Retry", style: .default) { (action) in
+            self.paymentContext.retryLoading()
+        }
+        
+        alertController.addAction(cancel)
+        alertController.addAction(retry)
+        present(alertController, animated: true, completion: nil)
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didCreatePaymentResult paymentResult: STPPaymentResult, completion: @escaping STPErrorBlock) {
+        let idempotency = UUID().uuidString.replacingOccurrences(of: "-", with: "")
         
+        let data : [String: Any] = [
+            "total" : StripeCart.total,
+            "customerId" : UserService.user.stripeId,
+            "idempotency" : idempotency
+        ]
+        
+        Functions.functions().httpsCallable("createCharge").call(data) { (result, error) in
+            
+            if let error = error {
+                debugPrint(error.localizedDescription)
+                self.simpleAlert(title: "Error", msg: "Unable to make charge.")
+                completion(error)
+                return
+            }
+            
+            StripeCart.clearCart()
+            self.tableView.reloadData()
+            self.setupPaymentInfo()
+            completion(nil)
+        }
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didFinishWith status: STPPaymentStatus, error: Error?) {
+        let title: String
+        let message: String
         
+        activityIndicator.stopAnimating()
+        
+        switch status {
+        case .error:
+            title = "Error"
+            message = error?.localizedDescription ?? ""
+        case .success:
+            title = "Success!"
+            message = "Thank you for your purchase."
+        case .userCancellation:
+            return
+        }
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default) { (action) in
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didUpdateShippingAddress address: STPAddress, completion: @escaping STPShippingMethodsCompletionBlock) {
