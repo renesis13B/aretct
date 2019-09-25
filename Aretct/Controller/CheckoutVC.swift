@@ -63,6 +63,8 @@ class CheckoutVC: UIViewController, CartItemDelegate {
     }
 
     @IBAction func placeOrderClicked(_ sender: Any) {
+        paymentContext.requestPayment()
+        activityIndicator.startAnimating()
     }
     @IBAction func paymentMethodClicked(_ sender: Any) {
         paymentContext.pushPaymentOptionsViewController()
