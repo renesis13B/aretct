@@ -71,6 +71,7 @@
 		DA4B0E4C23117AD4007947C3 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E4923117AD4007947C3 /* ProductCell.swift */; };
 		DA4B0E4D23117AD4007947C3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E4A23117AD4007947C3 /* ProductCell.xib */; };
 		DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E4A23117AD4007947C3 /* ProductCell.xib */; };
+		DA4F3722233BD157007E6F7C /* StripeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDF12320FD7C001CC6EC /* StripeCart.swift */; };
 		DA6A8477232FC84400299EE7 /* StripeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8476232FC84400299EE7 /* StripeApi.swift */; };
 		DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
 		DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */; };
@@ -391,7 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */,
-				DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */,
 				DA4B0E25230B11A0007947C3 /* LoginVC.swift */,
 				DA4B0E27230B11CF007947C3 /* RegisterVC.swift */,
 				DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */,
@@ -454,6 +454,7 @@
 			children = (
 				DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */,
 				DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */,
+				DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */,
 				DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */,
 			);
 			path = XIBs;
@@ -912,6 +913,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4F3722233BD157007E6F7C /* StripeCart.swift in Sources */,
 				DA4B0E4523117835007947C3 /* ProductsVC.swift in Sources */,
 				DA317AC0231407000001C9E7 /* Constants.swift in Sources */,
 				DA4B0E3823113186007947C3 /* Firebase+Utils.swift in Sources */,

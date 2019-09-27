@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdminProductsVC: ProductVC {
+class AdminProductsVC: ProductsVC {
     
     var selectedProduct : Product?
 
@@ -48,5 +48,11 @@ class AdminProductsVC: ProductVC {
         }
     }
     
-
+    override func productFavorited(product: Product) {
+        return
+    }
+    
+    override func productAddToCart(product: Product) {
+        return
+    }
 }

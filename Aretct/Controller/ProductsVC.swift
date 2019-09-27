@@ -68,6 +68,9 @@ class ProductsVC: UIViewController, ProductCellDelegate {
     }
     
     func productFavorited(product: Product) {
+        
+        
+        
         if UserService.isGuest {
             self.simpleAlert(title: "Hi friend!", msg: "This is a user only feature, please create a registered user to take advantage of all our features.")
             return
