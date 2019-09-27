@@ -25,6 +25,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
     }
     
+    
     //Actions
     @IBAction func forgotPassClicked(_ sender: Any) {
         let vc = ForgotPasswordVC()

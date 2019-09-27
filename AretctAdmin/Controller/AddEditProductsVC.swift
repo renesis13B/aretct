@@ -127,7 +127,7 @@ class AddEditProductsVC: UIViewController {
         }
         
         //辞書型に変換する
-        let data = Product.modalToData(product: product)
+        let data = Product.modelToData(product: product)
         docRef.setData(data, merge: true) { (error) in
             if let error = error {
                 self.handleError(error: error, msg: "Unable to upload Firestore document.")

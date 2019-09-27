@@ -31,7 +31,9 @@ class HomeVC: UIViewController {
         setupInitialAnonymousUser()
         //Storybordからもナビゲージョンのスタイルを変更可能
         setupNavigationBar()
+        
     }
+    
     
     func setupNavigationBar() {
         guard let font = UIFont(name: "futura", size: 26) else {return}
