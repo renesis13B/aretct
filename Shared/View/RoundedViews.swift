@@ -14,7 +14,19 @@ class RoundedButton : UIButton {
     //クラスが初期化されるとすぐに呼び出されるメソッド
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.cornerRadius = 4
+        layer.backgroundColor = UIColor(red: 1, green: 0.36, blue: 0.36, alpha: 1).cgColor
+        layer.cornerRadius = 20
+    }
+}
+
+class WhiteRoundedButton : UIButton {
+    //クラスが初期化されるとすぐに呼び出されるメソッド
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.borderWidth = 1
+        layer.borderColor = UIColor(red: 1, green: 0.36, blue: 0.36, alpha: 1).cgColor
+        layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        layer.cornerRadius = 20
     }
 }
 
