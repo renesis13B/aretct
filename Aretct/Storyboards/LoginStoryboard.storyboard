@@ -13,6 +13,9 @@
         <array key="Metropolis-Bold.otf">
             <string>Metropolis-Bold</string>
         </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--WelcomeVC-->
@@ -146,7 +149,7 @@
                                 <rect key="frame" x="24" y="136" width="327" height="594"/>
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AJB-Sw-1b9">
-                                        <rect key="frame" x="145" y="240.33333333333331" width="37" height="37"/>
+                                        <rect key="frame" x="145" y="238.33333333333331" width="37" height="37"/>
                                         <color key="color" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aretct" translatesAutoresizingMaskIntoConstraints="NO" id="9X1-Z9-tPg">
@@ -158,16 +161,16 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fSs-oZ-mdE">
-                                        <rect key="frame" x="77.666666666666671" y="160" width="171.66666666666663" height="77.333333333333314"/>
+                                        <rect key="frame" x="77.666666666666671" y="160" width="171.66666666666663" height="75.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Aretct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrV-QM-a1s">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="17"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="15"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="15"/>
                                                 <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sra-A9-jF9">
-                                                <rect key="frame" x="0.0" y="27.000000000000004" width="171.66666666666666" height="50.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="25.000000000000004" width="171.66666666666666" height="50.333333333333343"/>
                                                 <string key="text">Aretctは海外から
 厳選したコスメティクスを
 あなたにお届けします</string>
@@ -178,7 +181,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-kQ-2BZ">
-                                        <rect key="frame" x="16" y="281.33333333333331" width="295" height="262.99999999999994"/>
+                                        <rect key="frame" x="16" y="279.33333333333331" width="295" height="262.99999999999994"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMl-UO-xdC">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
@@ -232,7 +235,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="3DN-9G-DpT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <state key="normal" title="会員登録">
+                                                <state key="normal" title="新規会員登録">
                                                     <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -304,19 +307,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrK-lo-E6i">
                                 <rect key="frame" x="24" y="136" width="327" height="594"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="メンバー登録をする" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-Cf-X0a">
-                                        <rect key="frame" x="-3" y="158" width="153" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="17"/>
-                                        <color key="textColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-Cf-X0a">
+                                        <rect key="frame" x="56.000000000000014" y="120" width="215.33333333333337" height="34"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="34"/>
+                                        <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G9X-yR-X5e">
-                                        <rect key="frame" x="-4" y="187" width="135.33333333333334" height="248"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="G9X-yR-X5e">
+                                        <rect key="frame" x="16" y="202" width="295" height="248"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIu-8k-uoq">
-                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="57E-jJ-Ypd"/>
                                                 </constraints>
@@ -325,7 +326,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-8S-b9b">
-                                                <rect key="frame" x="0.0" y="52" width="135.33333333333334" height="40"/>
+                                                <rect key="frame" x="0.0" y="52" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="HgA-Ne-0rJ"/>
                                                 </constraints>
@@ -334,7 +335,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-SN-MhU">
-                                                <rect key="frame" x="0.0" y="104" width="135.33333333333334" height="40"/>
+                                                <rect key="frame" x="0.0" y="104" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="b5c-OC-Xfe"/>
                                                 </constraints>
@@ -343,7 +344,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="確認用パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QNi-ZS-wPQ">
-                                                <rect key="frame" x="0.0" y="156" width="135.33333333333334" height="40"/>
+                                                <rect key="frame" x="0.0" y="156" width="295" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="bWn-g9-RVJ"/>
                                                 </constraints>
@@ -352,13 +353,13 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yij-lt-Hpm" customClass="RoundedButton" customModule="Aretct" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="208" width="135.33333333333334" height="40"/>
-                                                <color key="backgroundColor" red="0.0" green="0.76862745099999996" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="208" width="295" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="fNJ-rR-5cO"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
-                                                <state key="normal" title="メンバー登録">
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="新規会員登録">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -367,13 +368,21 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9pY-fu-hpq">
-                                        <rect key="frame" x="145" y="278" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9pY-fu-hpq">
+                                        <rect key="frame" x="145" y="278.66666666666669" width="37" height="37"/>
                                         <color key="color" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9pY-fu-hpq" firstAttribute="centerY" secondItem="FrK-lo-E6i" secondAttribute="centerY" id="AIa-PD-bVy"/>
+                                    <constraint firstItem="G9X-yR-X5e" firstAttribute="top" secondItem="Vkb-Cf-X0a" secondAttribute="bottom" constant="48" id="JtJ-Mu-YII"/>
+                                    <constraint firstItem="Vkb-Cf-X0a" firstAttribute="top" secondItem="FrK-lo-E6i" secondAttribute="top" constant="120" id="M4T-W4-IJS"/>
+                                    <constraint firstItem="9pY-fu-hpq" firstAttribute="centerX" secondItem="FrK-lo-E6i" secondAttribute="centerX" id="eg7-Kh-LCZ"/>
+                                    <constraint firstItem="G9X-yR-X5e" firstAttribute="leading" secondItem="FrK-lo-E6i" secondAttribute="leading" constant="16" id="grB-hc-nYD"/>
+                                    <constraint firstAttribute="trailing" secondItem="G9X-yR-X5e" secondAttribute="trailing" constant="16" id="h9v-hi-ig4"/>
+                                    <constraint firstItem="Vkb-Cf-X0a" firstAttribute="centerX" secondItem="FrK-lo-E6i" secondAttribute="centerX" id="ljG-Qo-WFX"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
