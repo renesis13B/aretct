@@ -18,6 +18,8 @@
 		DA16BDEF2320F341001CC6EC /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16BDED2320F341001CC6EC /* CartItemCell.xib */; };
 		DA16BDF22320FD7C001CC6EC /* StripeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDF12320FD7C001CC6EC /* StripeCart.swift */; };
 		DA1F355A233FA7980047FA63 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F3559233FA7980047FA63 /* WelcomeVC.swift */; };
+		DA1F355D233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */; };
+		DA1F355E233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */; };
 		DA317ABE2314044A0001C9E7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */; };
 		DA317ABF231406DE0001C9E7 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2D231021DD007947C3 /* RoundedViews.swift */; };
 		DA317AC0231407000001C9E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E2A23101A78007947C3 /* Constants.swift */; };
@@ -127,6 +129,7 @@
 		DA16BDED2320F341001CC6EC /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
 		DA16BDF12320FD7C001CC6EC /* StripeCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeCart.swift; sourceTree = "<group>"; };
 		DA1F3559233FA7980047FA63 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		DA317AC5231409740001C9E7 /* AddEditCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCategoryVC.swift; sourceTree = "<group>"; };
 		DA317AC82316E40F0001C9E7 /* AdminProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProductsVC.swift; sourceTree = "<group>"; };
 		DA317ACA2316EC810001C9E7 /* AddEditProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditProductsVC.swift; sourceTree = "<group>"; };
@@ -266,6 +269,14 @@
 			path = Stripe;
 			sourceTree = "<group>";
 		};
+		DA1F355B233FD0640047FA63 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		DA317AC7231409890001C9E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +392,7 @@
 		DA4B0E19230AC141007947C3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DA1F355B233FD0640047FA63 /* Fonts */,
 				DA4B0E4223115EAD007947C3 /* XIBs */,
 				DA4B0E23230B10F0007947C3 /* Model */,
 				DA4B0E2C231021B7007947C3 /* View */,
@@ -674,6 +686,7 @@
 				DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */,
 				DA4B0E3523111C34007947C3 /* ForgotPasswordVC.xib in Resources */,
 				DA16BDEF2320F341001CC6EC /* CartItemCell.xib in Resources */,
+				DA1F355D233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */,
 				DA4B0E1C230AED7A007947C3 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +715,7 @@
 				DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */,
 				DA4B0E1A230AC1C4007947C3 /* Assets.xcassets in Resources */,
 				DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */,
+				DA1F355E233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */,
 				DA317AC4231407DA0001C9E7 /* ProductDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
