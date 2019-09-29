@@ -13,6 +13,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var favoriteBtn: UIButton!
+    @IBOutlet weak var productBrandName: UILabel!
     
     weak var delegate : ProductCellDelegate?
     private var product: Product!
@@ -27,6 +28,7 @@ class ProductCell: UITableViewCell {
         self.delegate = delegate
         
         productTitle.text = product.name
+        productBrandName.text = product.burandName
         
         if let url = URL(string: product.imageUrl) {
             let placeholder = UIImage(named: AppImages.Placeholder)

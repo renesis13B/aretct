@@ -11,6 +11,7 @@ import FirebaseFirestore
 
 struct Product {
     var name: String
+    var burandName: String
     var id: String
     var category: String
     var price: Double
@@ -21,6 +22,7 @@ struct Product {
     
     init(
         name: String,
+        burandName: String,
         id: String,
         category: String,
         price: Double,
@@ -30,6 +32,7 @@ struct Product {
         stock: Int = 0
         ) {
         self.name = name
+        self.burandName = burandName
         self.id = id
         self.category = category
         self.price = price
@@ -41,6 +44,7 @@ struct Product {
     
     init(data: [String: Any]) {
         name = data["name"] as? String ?? ""
+        burandName = data["burandName"] as? String ?? ""
         id = data["id"] as? String ?? ""
         category = data["category"] as? String ?? ""
         price = data["price"] as? Double ?? 0.0
@@ -53,6 +57,7 @@ struct Product {
     static func modelToData(product: Product) -> [String: Any] {
         let data : [String : Any] = [
             "name" : product.name,
+            "burandName" : product.burandName,
             "id" : product.id,
             "category" : product.category,
             "price" : product.price,
