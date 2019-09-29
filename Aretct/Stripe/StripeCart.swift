@@ -22,7 +22,7 @@ final class _StripeCart {
     var subtotal: Int {
         var amount = 0
         for item in cartItems {
-            let pricePennies = Int(item.price * 100)
+            let pricePennies = Int(item.price)
             amount += pricePennies
         }
         return amount

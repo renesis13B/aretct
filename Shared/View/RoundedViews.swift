@@ -50,3 +50,21 @@ class RoundImageView: UIImageView {
         layer.cornerRadius = 5
     }
 }
+
+class RoundImageTopLefAndBottomLefttView: UIImageView {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.cornerRadius = 5
+        if #available(iOS 11.0, *) {
+            layer.maskedCorners = [.layerMinXMinYCorner , .layerMinXMaxYCorner]
+        } else {
+            let path = UIBezierPath(roundedRect:self.bounds,
+                                    byRoundingCorners:[.topRight, .bottomRight],
+                                    cornerRadii: CGSize(width: 20, height: 20))
+            let maskLayer = CAShapeLayer()
+            maskLayer.path = path.cgPath
+            layer.mask = maskLayer
+        }
+    }
+}

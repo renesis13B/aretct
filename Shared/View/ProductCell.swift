@@ -4,7 +4,6 @@ import Kingfisher
 
 protocol ProductCellDelegate : class {
     func productFavorited(product: Product)
-    func productAddToCart(product: Product)
 }
 
 class ProductCell: UITableViewCell {
@@ -14,6 +13,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var favoriteBtn: UIButton!
+    @IBOutlet weak var productBrandName: UILabel!
     
     weak var delegate : ProductCellDelegate?
     private var product: Product!
@@ -28,6 +28,7 @@ class ProductCell: UITableViewCell {
         self.delegate = delegate
         
         productTitle.text = product.name
+        productBrandName.text = product.burandName
         
         if let url = URL(string: product.imageUrl) {
             let placeholder = UIImage(named: AppImages.Placeholder)
@@ -38,20 +39,17 @@ class ProductCell: UITableViewCell {
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
+        formatter.locale = Locale(identifier: "ja_JP")
         if let price = formatter.string(from: product.price as NSNumber) {
             productPrice.text = price
         }
         
         //contains()の引数はEquatableに準拠している必要がある
         if UserService.favorites.contains(product) {
-            favoriteBtn.setImage(UIImage(named: AppImages.FilledStar), for: .normal)
+            favoriteBtn.setImage(UIImage(named: AppImages.FilledHeart), for: .normal)
         } else {
-            favoriteBtn.setImage(UIImage(named: AppImages.EmptyStar), for: .normal)
+            favoriteBtn.setImage(UIImage(named: AppImages.EmptyHeart), for: .normal)
         }
-    }
-    
-    @IBAction func addCartClicked(_ sender: Any) {
-        delegate?.productAddToCart(product: product)
     }
     
     

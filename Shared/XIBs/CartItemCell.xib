@@ -22,35 +22,49 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkH-tx-e5a" customClass="RoundedShadowView" customModule="Aretct" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="304" height="83.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal_5" translatesAutoresizingMaskIntoConstraints="NO" id="FpY-z1-qMj" customClass="RoundImageView" customModule="Aretct" customModuleProvider="target">
-                                <rect key="frame" x="8" y="8" width="67.5" height="67.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal_5" translatesAutoresizingMaskIntoConstraints="NO" id="FpY-z1-qMj" customClass="RoundImageTopLefAndBottomLefttView" customModule="Aretct" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="83.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FpY-z1-qMj" secondAttribute="height" multiplier="1:1" id="1Qk-1d-6F1"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title $99.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DJ-XO-P8W">
-                                <rect key="frame" x="87.5" y="30.5" width="158" height="23"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwb-tH-x5a">
                                 <rect key="frame" x="264" y="27" width="28" height="30"/>
-                                <state key="normal" image="red_trash"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="red_trash">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="removeItemClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="N4h-wB-aXc"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Dkl-Uv-xGB">
+                                <rect key="frame" x="99.5" y="17" width="127.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DJ-XO-P8W">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥9,999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-P4-Sqs">
+                                        <rect key="frame" x="0.0" y="30.5" width="53" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FpY-z1-qMj" firstAttribute="leading" secondItem="AkH-tx-e5a" secondAttribute="leading" constant="8" id="2wS-zi-3JU"/>
-                            <constraint firstItem="Mwb-tH-x5a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1DJ-XO-P8W" secondAttribute="trailing" constant="12" id="3sT-uG-mw8"/>
-                            <constraint firstItem="FpY-z1-qMj" firstAttribute="top" secondItem="AkH-tx-e5a" secondAttribute="top" constant="8" id="8Lq-4D-sC6"/>
-                            <constraint firstAttribute="bottom" secondItem="FpY-z1-qMj" secondAttribute="bottom" constant="8" id="9z1-L3-lCw"/>
-                            <constraint firstItem="1DJ-XO-P8W" firstAttribute="centerY" secondItem="AkH-tx-e5a" secondAttribute="centerY" id="R4K-wa-TxI"/>
+                            <constraint firstItem="FpY-z1-qMj" firstAttribute="leading" secondItem="AkH-tx-e5a" secondAttribute="leading" id="2wS-zi-3JU"/>
+                            <constraint firstItem="Dkl-Uv-xGB" firstAttribute="leading" secondItem="FpY-z1-qMj" secondAttribute="trailing" constant="16" id="5ZS-QT-mEa"/>
+                            <constraint firstItem="FpY-z1-qMj" firstAttribute="top" secondItem="AkH-tx-e5a" secondAttribute="top" id="8Lq-4D-sC6"/>
+                            <constraint firstItem="Dkl-Uv-xGB" firstAttribute="centerY" secondItem="AkH-tx-e5a" secondAttribute="centerY" id="9c5-B4-Paw"/>
+                            <constraint firstAttribute="bottom" secondItem="FpY-z1-qMj" secondAttribute="bottom" id="9z1-L3-lCw"/>
                             <constraint firstItem="Mwb-tH-x5a" firstAttribute="centerY" secondItem="AkH-tx-e5a" secondAttribute="centerY" id="UVv-ov-XW5"/>
-                            <constraint firstItem="1DJ-XO-P8W" firstAttribute="leading" secondItem="FpY-z1-qMj" secondAttribute="trailing" constant="12" id="bqH-hS-fhJ"/>
+                            <constraint firstItem="Mwb-tH-x5a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dkl-Uv-xGB" secondAttribute="trailing" constant="12" id="W7A-Il-Q4c"/>
                             <constraint firstAttribute="trailing" secondItem="Mwb-tH-x5a" secondAttribute="trailing" constant="12" id="jrN-eg-nKJ"/>
                         </constraints>
                     </view>
@@ -65,6 +79,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="productImg" destination="FpY-z1-qMj" id="muR-7G-MMp"/>
+                <outlet property="productPriceLabel" destination="YcP-P4-Sqs" id="oWj-Cv-RGs"/>
                 <outlet property="productTitleLbl" destination="1DJ-XO-P8W" id="bGq-mi-5co"/>
                 <outlet property="removeItemBtn" destination="Mwb-tH-x5a" id="Xqh-q2-2ME"/>
             </connections>

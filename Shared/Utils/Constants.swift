@@ -24,6 +24,8 @@ struct AppImages {
     static let RedCheck = "red_check"
     static let FilledStar = "filled_star"
     static let EmptyStar = "empty_star"
+    static let FilledHeart = "filled_heart"
+    static let EmptyHeart = "empty_heart"
     static let Placeholder = "placeholder"
 }
 

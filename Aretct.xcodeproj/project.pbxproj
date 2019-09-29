@@ -17,7 +17,6 @@
 		DA16BDEE2320F341001CC6EC /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDEC2320F341001CC6EC /* CartItemCell.swift */; };
 		DA16BDEF2320F341001CC6EC /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16BDED2320F341001CC6EC /* CartItemCell.xib */; };
 		DA16BDF22320FD7C001CC6EC /* StripeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDF12320FD7C001CC6EC /* StripeCart.swift */; };
-		DA1F355A233FA7980047FA63 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F3559233FA7980047FA63 /* WelcomeVC.swift */; };
 		DA1F355D233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */; };
 		DA1F355E233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */; };
 		DA1F3560233FD3300047FA63 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA1F355F233FD3300047FA63 /* Metropolis-SemiBold.otf */; };
@@ -130,7 +129,6 @@
 		DA16BDEC2320F341001CC6EC /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
 		DA16BDED2320F341001CC6EC /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
 		DA16BDF12320FD7C001CC6EC /* StripeCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeCart.swift; sourceTree = "<group>"; };
-		DA1F3559233FA7980047FA63 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		DA1F355C233FD07D0047FA63 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		DA1F355F233FD3300047FA63 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
 		DA317AC5231409740001C9E7 /* AddEditCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCategoryVC.swift; sourceTree = "<group>"; };
@@ -415,7 +413,6 @@
 				DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */,
 				DA4B0E4323117835007947C3 /* ProductsVC.swift */,
 				DA16BDEA2320E91D001CC6EC /* CheckoutVC.swift */,
-				DA1F3559233FA7980047FA63 /* WelcomeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -901,7 +898,6 @@
 				DA317ACD2319609C0001C9E7 /* User.swift in Sources */,
 				DA4B0E2E231021DD007947C3 /* RoundedViews.swift in Sources */,
 				DA317AD123197B490001C9E7 /* UserService.swift in Sources */,
-				DA1F355A233FA7980047FA63 /* WelcomeVC.swift in Sources */,
 				DA4B0E2B23101A78007947C3 /* Constants.swift in Sources */,
 				DA4B0E4B23117AD4007947C3 /* ProductCell.swift in Sources */,
 				DA4B0E30231031E8007947C3 /* Extension.swift in Sources */,

@@ -16,6 +16,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
 
     // Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     
     // Variables
@@ -28,6 +29,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        categoryLabel.text = category.name
         db = Firestore.firestore()
         
         tableView.delegate = self
@@ -78,18 +80,18 @@ class ProductsVC: UIViewController, ProductCellDelegate {
         
         UserService.favoriteSelected(product: product)
         guard let index = products.firstIndex(of: product) else { return }
-        print(index)
+       
         tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     
-    func productAddToCart(product: Product) {
-        if UserService.isGuest {
-            self.simpleAlert(title: "Hi friend!", msg: "This is a user only feature, please create a registered user to take advantage of all our features.")
-            return
-        }
-        
-        StripeCart.addItemToCart(item: product)
-    }
+//    func productAddToCart(product: Product) {
+//        if UserService.isGuest {
+//            self.simpleAlert(title: "Hi friend!", msg: "This is a user only feature, please create a registered user to take advantage of all our features.")
+//            return
+//        }
+//        
+//        StripeCart.addItemToCart(item: product)
+//    }
 
 }
 
@@ -146,6 +148,6 @@ extension ProductsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 160
     }
 }
