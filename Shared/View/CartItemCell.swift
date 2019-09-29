@@ -17,6 +17,7 @@ class CartItemCell: UITableViewCell {
     // Outlets
     @IBOutlet weak var productImg: RoundImageView!
     @IBOutlet weak var productTitleLbl: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var removeItemBtn: UIButton!
     
     // Variables
@@ -33,11 +34,14 @@ class CartItemCell: UITableViewCell {
         self.delegate = delegate
         self.item = product
         
+        productTitleLbl.text = product.name
+        
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
+        formatter.locale = Locale(identifier: "ja_JP")
         
         if let price = formatter.string(from: product.price as NSNumber) {
-            productTitleLbl.text = "\(product.name) \(price)"
+            productPriceLabel.text = "\(price)"
         }
         
         if let url = URL(string: product.imageUrl) {

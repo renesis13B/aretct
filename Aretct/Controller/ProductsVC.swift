@@ -80,7 +80,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
         
         UserService.favoriteSelected(product: product)
         guard let index = products.firstIndex(of: product) else { return }
-        print(index)
+       
         tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
     

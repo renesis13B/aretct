@@ -24,7 +24,6 @@ class ProductDetailVC: UIViewController {
         super.viewDidLoad()
         
         productTitle.text = product.name
-        print(product.productDescription)
         productDescription.text = product.productDescription.replacingOccurrences(of: "\n", with: "\n")
         
         if let url = URL(string: product.imageUrl) {
