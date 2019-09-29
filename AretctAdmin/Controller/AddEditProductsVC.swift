@@ -110,6 +110,7 @@ class AddEditProductsVC: UIViewController {
     func uploadDocumnet(url: String) {
         var docRef : DocumentReference!
         var product = Product.init(name: name,
+                                   burandName: "",
                                    id: "",
                                    category: selectedCategory.id,
                                    price: price,

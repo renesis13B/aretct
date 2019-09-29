@@ -52,7 +52,5 @@ class AdminProductsVC: ProductsVC {
         return
     }
     
-    override func productAddToCart(product: Product) {
-        return
-    }
+
 }

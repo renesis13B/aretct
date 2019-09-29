@@ -24,7 +24,8 @@ class ProductDetailVC: UIViewController {
         super.viewDidLoad()
         
         productTitle.text = product.name
-        productDescription.text = product.productDescription
+        print(product.productDescription)
+        productDescription.text = product.productDescription.replacingOccurrences(of: "\n", with: "\n")
         
         if let url = URL(string: product.imageUrl) {
             productImg.kf.setImage(with: url)
@@ -32,6 +33,7 @@ class ProductDetailVC: UIViewController {
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
+        formatter.locale = Locale(identifier: "ja_JP")
         if let price = formatter.string(from: product.price as NSNumber) {
             productPrice.text = price
         }
