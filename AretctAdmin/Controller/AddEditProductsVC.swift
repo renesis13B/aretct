@@ -13,6 +13,7 @@ import FirebaseFirestore
 class AddEditProductsVC: UIViewController {
     //Outlets
     @IBOutlet weak var productNameTxt: UITextField!
+    @IBOutlet weak var productBrandNameTxt: UITextField!
     @IBOutlet weak var productPriceTxt: UITextField!
     @IBOutlet weak var productDescTxt: UITextView!
     @IBOutlet weak var productImgView: RoundImageView!
@@ -24,6 +25,7 @@ class AddEditProductsVC: UIViewController {
     var selectedCategory : Category!
     var productToEdit : Product?
     var name = ""
+    var burandName = ""
     var price = 0.0
     var productDescription = ""
     
@@ -37,6 +39,7 @@ class AddEditProductsVC: UIViewController {
         
         if let product = productToEdit {
             productNameTxt.text = product.name
+            productBrandNameTxt.text = product.burandName
             productDescTxt.text = product.productDescription
             productPriceTxt.text = String(product.price)
             
@@ -60,6 +63,7 @@ class AddEditProductsVC: UIViewController {
     func uploadImageTheDocument() {
         guard let image = productImgView.image,
         let name = productNameTxt.text, name.isNotEmpty,
+        let burandName = productBrandNameTxt.text, burandName.isNotEmpty,
         let description = productDescTxt.text, description.isNotEmpty,
         let priceString = productPriceTxt.text,
             let price = Double(priceString) else {
@@ -68,6 +72,7 @@ class AddEditProductsVC: UIViewController {
         }
         
         self.name = name
+        self.burandName = burandName
         self.productDescription = description
         self.price = price
         
@@ -110,7 +115,7 @@ class AddEditProductsVC: UIViewController {
     func uploadDocumnet(url: String) {
         var docRef : DocumentReference!
         var product = Product.init(name: name,
-                                   burandName: "",
+                                   burandName: burandName,
                                    id: "",
                                    category: selectedCategory.id,
                                    price: price,

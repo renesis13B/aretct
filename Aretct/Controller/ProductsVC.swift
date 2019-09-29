@@ -29,7 +29,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryLabel.text = category.name
+//        categoryLabel.text = category.name
         db = Firestore.firestore()
         
         tableView.delegate = self

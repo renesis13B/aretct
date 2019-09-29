@@ -10,11 +10,12 @@ import UIKit
 
 class AdminProductsVC: ProductsVC {
     
+    
     var selectedProduct : Product?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         let editCategoryBtn = UIBarButtonItem(title: "Edit Category", style: .plain, target: self, action: #selector(editCategory))
         let newProductBtn = UIBarButtonItem(title: "+ Product", style: .plain, target: self, action: #selector(newProduct))
         
