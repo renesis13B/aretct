@@ -16,6 +16,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
 
     // Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     
     // Variables
@@ -28,6 +29,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoryLabel.text = category.name
         db = Firestore.firestore()
         
         tableView.delegate = self
