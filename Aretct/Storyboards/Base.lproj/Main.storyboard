@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Metropolis-Bold.otf">
-            <string>Metropolis-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Aretct-->
         <scene sceneID="tne-QT-ifu">
@@ -294,23 +289,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lIA-FB-eKI">
-                                <rect key="frame" x="2" y="168" width="410" height="728"/>
+                                <rect key="frame" x="2" y="88" width="410" height="808"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xie-U6-soO">
-                                <rect key="frame" x="8" y="120" width="86" height="32"/>
-                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xie-U6-soO" firstAttribute="leading" secondItem="HT8-gR-FdT" secondAttribute="leading" constant="8" id="3To-Ps-Xf9"/>
                             <constraint firstAttribute="bottom" secondItem="lIA-FB-eKI" secondAttribute="bottom" id="9R2-0t-GHD"/>
                             <constraint firstItem="lIA-FB-eKI" firstAttribute="leading" secondItem="HT8-gR-FdT" secondAttribute="leading" constant="2" id="Mcw-Fs-Uf2"/>
-                            <constraint firstItem="xie-U6-soO" firstAttribute="top" secondItem="HT8-gR-FdT" secondAttribute="top" constant="32" id="Nm9-9e-r0k"/>
-                            <constraint firstItem="lIA-FB-eKI" firstAttribute="top" secondItem="xie-U6-soO" secondAttribute="bottom" constant="16" id="S1g-Vr-D0p"/>
+                            <constraint firstItem="lIA-FB-eKI" firstAttribute="top" secondItem="HT8-gR-FdT" secondAttribute="top" id="NRH-eo-qbb"/>
                             <constraint firstItem="HT8-gR-FdT" firstAttribute="trailing" secondItem="lIA-FB-eKI" secondAttribute="trailing" constant="2" id="gpV-on-xgy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HT8-gR-FdT"/>
@@ -323,7 +310,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="categoryLabel" destination="xie-U6-soO" id="nRU-3d-VwY"/>
                         <outlet property="tableView" destination="lIA-FB-eKI" id="fvd-76-lWX"/>
                     </connections>
                 </viewController>
@@ -358,6 +344,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ude-dY-RK5"/>
-        <segue reference="VlC-T1-n9l"/>
+        <segue reference="Zq6-cu-n4v"/>
     </inferredMetricsTieBreakers>
 </document>
