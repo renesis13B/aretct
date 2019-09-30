@@ -50,3 +50,7 @@ struct Segues {
     static let ToRegisterAccount = "ToRegisterAccount"
     static let ToLoginVC = "ToLoginVC"
 }
+
+struct AleartMessage {
+    static let PleaseResisterUser = "これは会員限定の機能です。全ての機能を使うためには会員登録をお願いします"
+}
