@@ -38,7 +38,6 @@
 		DA4B0DBA230AC0B7007947C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */; };
 		DA4B0DBC230AC0B7007947C3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */; };
 		DA4B0DBF230AC0B7007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DBD230AC0B7007947C3 /* Main.storyboard */; };
-		DA4B0DC1230AC0B7007947C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */; };
 		DA4B0DC4230AC0B7007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC2230AC0B7007947C3 /* LaunchScreen.storyboard */; };
 		DA4B0DCF230AC0B8007947C3 /* AretctTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DCE230AC0B8007947C3 /* AretctTests.swift */; };
 		DA4B0DDA230AC0B8007947C3 /* AretctUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */; };
@@ -48,7 +47,6 @@
 		DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */; };
 		DA4B0E03230AC10A007947C3 /* AretctAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */; };
 		DA4B0E0E230AC10A007947C3 /* AretctAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */; };
-		DA4B0E1A230AC1C4007947C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */; };
 		DA4B0E1C230AED7A007947C3 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1B230AED7A007947C3 /* LoginStoryboard.storyboard */; };
 		DA4B0E1E230B0758007947C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1D230B0758007947C3 /* GoogleService-Info.plist */; };
 		DA4B0E20230B0986007947C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1F230B0986007947C3 /* GoogleService-Info.plist */; };
@@ -79,6 +77,8 @@
 		DA6A8477232FC84400299EE7 /* StripeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8476232FC84400299EE7 /* StripeApi.swift */; };
 		DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
 		DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */; };
+		DAA6D06B23424B35007E8D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA6D06A23424B35007E8D86 /* Assets.xcassets */; };
+		DAA6D06C23424B35007E8D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA6D06A23424B35007E8D86 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,7 +140,6 @@
 		DA4B0DB9230AC0B7007947C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DA4B0DBE230AC0B7007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA4B0DC3230AC0B7007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4B0DC5230AC0B7007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4B0DCA230AC0B8007947C3 /* AretctTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +181,7 @@
 		DA6A8476232FC84400299EE7 /* StripeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeApi.swift; sourceTree = "<group>"; };
 		DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailVC.xib; sourceTree = "<group>"; };
+		DAA6D06A23424B35007E8D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E337F8ECB6BD087570C0B1F1 /* Pods_Aretct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aretct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CEC648DA7DE319313B6E9C /* Pods-Aretct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aretct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aretct/Pods-Aretct.debug.xcconfig"; sourceTree = "<group>"; };
 		E61FD73E9B53952FAE2BF46E /* Pods-AretctUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AretctUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AretctUITests/Pods-AretctUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -364,6 +364,7 @@
 		DA4B0DEC230AC109007947C3 /* AretctAdmin */ = {
 			isa = PBXGroup;
 			children = (
+				DAA6D069234238E8007E8D86 /* XIBs */,
 				DA317AC7231409890001C9E7 /* Controller */,
 				DA4B0DF1230AC109007947C3 /* Main.storyboard */,
 				DA4B0E1F230B0986007947C3 /* GoogleService-Info.plist */,
@@ -394,12 +395,12 @@
 		DA4B0E19230AC141007947C3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DAA6D06A23424B35007E8D86 /* Assets.xcassets */,
 				DA1F355B233FD0640047FA63 /* Fonts */,
 				DA4B0E4223115EAD007947C3 /* XIBs */,
 				DA4B0E23230B10F0007947C3 /* Model */,
 				DA4B0E2C231021B7007947C3 /* View */,
 				DA4B0E2923101A1B007947C3 /* Utils */,
-				DA4B0DC0230AC0B7007947C3 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -482,6 +483,13 @@
 				DA4B0E4A23117AD4007947C3 /* ProductCell.xib */,
 				DA4B0E3D23115E93007947C3 /* CategoryCell.xib */,
 				DA16BDED2320F341001CC6EC /* CartItemCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		DAA6D069234238E8007E8D86 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -681,7 +689,6 @@
 				DA4B0DC4230AC0B7007947C3 /* LaunchScreen.storyboard in Resources */,
 				DA4B0E4D23117AD4007947C3 /* ProductCell.xib in Resources */,
 				DA4B0E4023115E93007947C3 /* CategoryCell.xib in Resources */,
-				DA4B0DC1230AC0B7007947C3 /* Assets.xcassets in Resources */,
 				DA1F3560233FD3300047FA63 /* Metropolis-SemiBold.otf in Resources */,
 				DA4B0DBF230AC0B7007947C3 /* Main.storyboard in Resources */,
 				DA4B0E1E230B0758007947C3 /* GoogleService-Info.plist in Resources */,
@@ -689,6 +696,7 @@
 				DA4B0E3523111C34007947C3 /* ForgotPasswordVC.xib in Resources */,
 				DA16BDEF2320F341001CC6EC /* CartItemCell.xib in Resources */,
 				DA1F355D233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */,
+				DAA6D06B23424B35007E8D86 /* Assets.xcassets in Resources */,
 				DA4B0E1C230AED7A007947C3 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,10 +723,10 @@
 				DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */,
 				DA4B0E20230B0986007947C3 /* GoogleService-Info.plist in Resources */,
 				DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */,
-				DA4B0E1A230AC1C4007947C3 /* Assets.xcassets in Resources */,
 				DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */,
 				DA1F355E233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */,
 				DA1F3561233FD3300047FA63 /* Metropolis-SemiBold.otf in Resources */,
+				DAA6D06C23424B35007E8D86 /* Assets.xcassets in Resources */,
 				DA317AC4231407DA0001C9E7 /* ProductDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
