@@ -71,7 +71,7 @@
                         <rightBarButtonItems>
                             <barButtonItem image="bar_button_cart" id="dIG-KU-Vbg">
                                 <connections>
-                                    <segue destination="ia0-Za-v4z" kind="show" id="GhH-JD-GpW"/>
+                                    <segue destination="ia0-Za-v4z" kind="show" identifier="ToCheckoutVC" id="VlC-T1-n9l"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="bar_button_star" id="IRi-sQ-8Rx">
@@ -358,6 +358,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ude-dY-RK5"/>
-        <segue reference="GhH-JD-GpW"/>
+        <segue reference="VlC-T1-n9l"/>
     </inferredMetricsTieBreakers>
 </document>

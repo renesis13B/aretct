@@ -121,7 +121,6 @@ class HomeVC: UIViewController {
 
     //Action
     
-    
     @IBAction func favoritesClicked(_ sender: Any) {
         if UserService.isGuest {
            self.simpleAlert(title: "お客様へ", msg: AleartMessage.PleaseResisterUser)
