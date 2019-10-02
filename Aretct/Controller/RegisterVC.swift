@@ -21,11 +21,6 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var activityIndicater: UIActivityIndicatorView!
     
     
-    
-    //Variables
-     let loginManager = LoginManager()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        

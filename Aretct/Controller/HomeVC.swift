@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FBSDKLoginKit
 
 class HomeVC: UIViewController {
     //Outlets
@@ -21,17 +20,21 @@ class HomeVC: UIViewController {
     var selectedCategory: Category!
     var db : Firestore!
     var listener : ListenerRegistration!
-    let loginManager = LoginManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserService.isGuest {
+            let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
+            present(controller, animated: true, completion: nil)
+        }
         //これでFirestoreのルート(Home)ディレクトリが取得できる
         db = Firestore.firestore()
         setupCollectionView()
         setupInitialAnonymousUser()
         //Storybordからもナビゲージョンのスタイルを変更可能
         setupNavigationBar()
-        
     }
     
     
@@ -65,6 +68,7 @@ class HomeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         //viewDidLoadはviewのインスタンス時に一度だけ呼ばれる
         //対照的にviewDidAppearはロードするたびに表示される
+
         
         setCategoriesListener()
         
@@ -80,6 +84,9 @@ class HomeVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         //VCが破棄されると監視を削除する
+        
+        guard let listener = listener else { return }
+        
         listener.remove()
         categories.removeAll()
         collectionView.reloadData()
@@ -139,7 +146,7 @@ class HomeVC: UIViewController {
             //匿名ログイン以外でログアウトボタンを押した場合
             do{
                 try Auth.auth().signOut()
-                loginManager.logOut()
+                UserService.logoutUser()
                 //ログアウト後に、匿名ログイン状態に戻す必要があるから
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error {
