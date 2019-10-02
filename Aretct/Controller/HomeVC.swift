@@ -24,17 +24,13 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UserService.isGuest {
-            let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
-            present(controller, animated: true, completion: nil)
-        }
         //これでFirestoreのルート(Home)ディレクトリが取得できる
         db = Firestore.firestore()
         setupCollectionView()
         setupInitialAnonymousUser()
         //Storybordからもナビゲージョンのスタイルを変更可能
         setupNavigationBar()
+        setupModalLoginVC()
     }
     
     
@@ -62,6 +58,14 @@ class HomeVC: UIViewController {
                     debugPrint(error)
                 }
             }
+        }
+    }
+    
+    func setupModalLoginVC() {
+        if UserService.isGuest {
+            let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
+            present(controller, animated: true, completion: nil)
         }
     }
 
