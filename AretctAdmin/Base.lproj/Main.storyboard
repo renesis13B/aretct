@@ -120,20 +120,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-3F-5Gx" customClass="RoundedButton" customModule="AretctAdmin" customModuleProvider="target">
-                                <rect key="frame" x="20" y="718" width="335" height="40"/>
-                                <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="MyJ-RH-nuI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="カテゴリーを追加する">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="addCategoryClicked:" destination="XlM-Bu-0iI" eventType="touchUpInside" id="DSS-vd-qZa"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="ESQ-Bf-ZHn" customClass="RoundImageView" customModule="AretctAdmin" customModuleProvider="target">
                                 <rect key="frame" x="87.666666666666686" y="282" width="200" height="250"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -152,6 +138,40 @@
                                 <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-VK-wfc">
+                                <rect key="frame" x="16" y="634" width="343" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-3F-5Gx" customClass="RoundedButton" customModule="AretctAdmin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MyJ-RH-nuI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="カテゴリーを追加する">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addCategoryClicked:" destination="XlM-Bu-0iI" eventType="touchUpInside" id="DSS-vd-qZa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC2-EO-wrR" customClass="WhiteRoundedButton" customModule="AretctAdmin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="iOc-y5-yPD"/>
+                                            <constraint firstAttribute="height" constant="40" id="lgs-vO-rtn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="キャンセルする">
+                                            <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="removeClicked:" destination="CUY-9N-yNk" eventType="touchUpInside" id="3XQ-BZ-DKY"/>
+                                            <action selector="removeclicked:" destination="XlM-Bu-0iI" eventType="touchUpInside" id="bae-Cp-wFP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -159,17 +179,17 @@
                             <constraint firstItem="ESQ-Bf-ZHn" firstAttribute="top" secondItem="JY6-FQ-Nrq" secondAttribute="bottom" constant="20" id="1mf-1S-e6p"/>
                             <constraint firstItem="xVG-kb-7iM" firstAttribute="top" secondItem="ESQ-Bf-ZHn" secondAttribute="bottom" constant="20" id="9rT-bT-Bmj"/>
                             <constraint firstItem="7ma-K5-xa9" firstAttribute="top" secondItem="Zbq-Wj-WlZ" secondAttribute="bottom" constant="12" id="AKy-7T-VTF"/>
-                            <constraint firstItem="ZP1-dx-7ya" firstAttribute="trailing" secondItem="6x2-3F-5Gx" secondAttribute="trailing" constant="20" id="Bf4-ZI-PZm"/>
-                            <constraint firstItem="ZP1-dx-7ya" firstAttribute="bottom" secondItem="6x2-3F-5Gx" secondAttribute="bottom" constant="20" id="KsU-g4-NK0"/>
                             <constraint firstItem="xVG-kb-7iM" firstAttribute="centerX" secondItem="hpP-4R-FdC" secondAttribute="centerX" id="OGH-oN-ctV"/>
+                            <constraint firstItem="ZP1-dx-7ya" firstAttribute="trailing" secondItem="HiF-VK-wfc" secondAttribute="trailing" constant="16" id="Qp3-5S-6C1"/>
                             <constraint firstItem="JY6-FQ-Nrq" firstAttribute="leading" secondItem="ZP1-dx-7ya" secondAttribute="leading" constant="20" id="Z9y-3F-w8K"/>
                             <constraint firstItem="7ma-K5-xa9" firstAttribute="leading" secondItem="ZP1-dx-7ya" secondAttribute="leading" constant="20" id="aYz-hK-Qo8"/>
                             <constraint firstItem="ZP1-dx-7ya" firstAttribute="trailing" secondItem="JY6-FQ-Nrq" secondAttribute="trailing" constant="20" id="edk-eG-xup"/>
+                            <constraint firstItem="ZP1-dx-7ya" firstAttribute="bottom" secondItem="HiF-VK-wfc" secondAttribute="bottom" constant="48" id="hZD-i6-uSt"/>
                             <constraint firstItem="JY6-FQ-Nrq" firstAttribute="top" secondItem="7ma-K5-xa9" secondAttribute="bottom" constant="40" id="lqE-RF-QdK"/>
                             <constraint firstItem="Zbq-Wj-WlZ" firstAttribute="centerX" secondItem="hpP-4R-FdC" secondAttribute="centerX" id="qIf-gB-BLO"/>
                             <constraint firstItem="Zbq-Wj-WlZ" firstAttribute="top" secondItem="ZP1-dx-7ya" secondAttribute="top" constant="20" id="tCN-vs-fQr"/>
                             <constraint firstItem="ESQ-Bf-ZHn" firstAttribute="centerX" secondItem="hpP-4R-FdC" secondAttribute="centerX" id="u3b-dd-uMu"/>
-                            <constraint firstItem="6x2-3F-5Gx" firstAttribute="leading" secondItem="ZP1-dx-7ya" secondAttribute="leading" constant="20" id="va3-1U-28V"/>
+                            <constraint firstItem="HiF-VK-wfc" firstAttribute="leading" secondItem="ZP1-dx-7ya" secondAttribute="leading" constant="16" id="x0w-FW-0gA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZP1-dx-7ya"/>
                     </view>
@@ -178,6 +198,7 @@
                         <outlet property="addBtn" destination="6x2-3F-5Gx" id="Y4f-Pn-AJy"/>
                         <outlet property="categoryImg" destination="ESQ-Bf-ZHn" id="7gR-14-5No"/>
                         <outlet property="nameTxt" destination="7ma-K5-xa9" id="dkQ-qG-c7h"/>
+                        <outlet property="removeBtn" destination="kC2-EO-wrR" id="Lhi-z1-bvN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b15-YM-ECd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,8 +302,8 @@
                                 <color key="textColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="OUj-q6-1kG">
-                                <rect key="frame" x="16" y="669" width="343" height="93"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OUj-q6-1kG">
+                                <rect key="frame" x="16" y="666" width="343" height="96"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naG-dB-Sbq" customClass="RoundedButton" customModule="AretctAdmin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
@@ -299,7 +320,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNF-23-aLL" customClass="WhiteRoundedButton" customModule="AretctAdmin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="53" width="343" height="40"/>
+                                        <rect key="frame" x="0.0" y="56" width="343" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ryU-bI-s0z"/>
                                         </constraints>
