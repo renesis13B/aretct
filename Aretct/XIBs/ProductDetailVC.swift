@@ -17,7 +17,7 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var productDescription: UILabel!
     @IBOutlet weak var bgView: UIVisualEffectView!
     
-    
+    // Variables
     var product: Product!
     
     override func viewDidLoad() {

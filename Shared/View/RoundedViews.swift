@@ -6,12 +6,10 @@
 //  Copyright © 2019 yw. All rights reserved.
 //
 
-//UI要素の視覚的なプロパティを設定する
-
 import UIKit
 
 class RoundedButton : UIButton {
-    //クラスが初期化されるとすぐに呼び出されるメソッド
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.backgroundColor = UIColor(red: 1, green: 0.36, blue: 0.36, alpha: 1).cgColor
@@ -20,7 +18,7 @@ class RoundedButton : UIButton {
 }
 
 class WhiteRoundedButton : UIButton {
-    //クラスが初期化されるとすぐに呼び出されるメソッド
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.borderWidth = 1

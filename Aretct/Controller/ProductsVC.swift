@@ -11,12 +11,8 @@ import FirebaseFirestore
 
 class ProductsVC: UIViewController, ProductCellDelegate {
 
-    
-    
-
     // Outlets
     @IBOutlet weak var tableView: UITableView!
-    
     
     // Variables
     var products = [Product]()
@@ -72,7 +68,7 @@ class ProductsVC: UIViewController, ProductCellDelegate {
         
         
         if UserService.isGuest {
-            self.simpleAlert(title: "Hi friend!", msg: "This is a user only feature, please create a registered user to take advantage of all our features.")
+            self.simpleAlert(title: "お客様へ", msg: AleartMessage.PleaseResisterUser)
             return
         }
         
@@ -81,16 +77,6 @@ class ProductsVC: UIViewController, ProductCellDelegate {
        
         tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
     }
-    
-//    func productAddToCart(product: Product) {
-//        if UserService.isGuest {
-//            self.simpleAlert(title: "Hi friend!", msg: "This is a user only feature, please create a registered user to take advantage of all our features.")
-//            return
-//        }
-//        
-//        StripeCart.addItemToCart(item: product)
-//    }
-
 }
 
 extension ProductsVC: UITableViewDelegate, UITableViewDataSource {

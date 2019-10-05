@@ -11,12 +11,11 @@ import Firebase
 
 class ForgotPasswordVC: UIViewController {
     
+    // Outlets
     @IBOutlet weak var emailTxt: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     @IBAction func canselClicked(_ sender: Any) {

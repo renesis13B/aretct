@@ -12,13 +12,11 @@ let StripeCart = _StripeCart()
 
 final class _StripeCart {
     
+    // Variables
     var cartItems = [Product]()
     private let stripeCreditCardCut = 0.029
     private let flatFeeCents = 30
     var shippingFees = 0
-    
-    // varaibles for subtotal, processing fees, total
-    
     var subtotal: Int {
         var amount = 0
         for item in cartItems {

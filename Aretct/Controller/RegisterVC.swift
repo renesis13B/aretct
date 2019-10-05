@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FBSDKLoginKit
 import Kingfisher
 
 class RegisterVC: UIViewController {
@@ -21,17 +20,11 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var activityIndicater: UIActivityIndicatorView!
     
     
-    
-    //Variables
-     let loginManager = LoginManager()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
     }
     
-    //Action
     @IBAction func registerNewMemberClicked(_ sender: Any) {
         guard let email = emailTxt.text, !email.isEmpty,
             let username = usernameTxt.text, !username.isEmpty,
@@ -85,13 +78,6 @@ class RegisterVC: UIViewController {
                 self.activityIndicater.stopAnimating()
                 self.dismiss(animated: true, completion: nil)
             }
-            
-            
         }
     }
-    
-    
-
-    
-
 }

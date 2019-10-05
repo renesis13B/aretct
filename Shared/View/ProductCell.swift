@@ -7,14 +7,15 @@ protocol ProductCellDelegate : class {
 }
 
 class ProductCell: UITableViewCell {
-    // Outlets
     
+    // Outlets
     @IBOutlet weak var productImg: RoundImageView!
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var favoriteBtn: UIButton!
     @IBOutlet weak var productBrandName: UILabel!
     
+    // Variables
     weak var delegate : ProductCellDelegate?
     private var product: Product!
     

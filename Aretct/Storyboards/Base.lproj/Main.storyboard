@@ -13,7 +13,7 @@
         <!--Aretct-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Aretct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AretctMainStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeVC" customModule="Aretct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,7 +69,7 @@
                                     <segue destination="ia0-Za-v4z" kind="show" identifier="ToCheckoutVC" id="VlC-T1-n9l"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="Shape-7" id="IRi-sQ-8Rx">
+                            <barButtonItem image="bar_button_heart" id="IRi-sQ-8Rx">
                                 <connections>
                                     <action selector="favoritesClicked:" destination="BYZ-38-t0r" id="Yew-42-cHV"/>
                                 </connections>
@@ -283,7 +283,7 @@
         <!--ProductsVC-->
         <scene sceneID="0dh-GC-VUi">
             <objects>
-                <viewController id="7pI-XD-seP" customClass="ProductsVC" customModule="Aretct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductsStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7pI-XD-seP" customClass="ProductsVC" customModule="Aretct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5hL-bC-WO7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,8 +339,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Shape-7" width="25" height="23"/>
         <image name="bar_button_cart" width="27" height="24"/>
+        <image name="bar_button_heart" width="25" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ude-dY-RK5"/>

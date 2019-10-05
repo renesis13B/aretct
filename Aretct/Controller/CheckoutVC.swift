@@ -12,13 +12,10 @@ import FirebaseFunctions
 
 class CheckoutVC: UIViewController, CartItemDelegate {
 
-    
-
     // Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var paymentMethodBtn: UIButton!
     @IBOutlet weak var shippingMethodBtn: UIButton!
-    
     @IBOutlet weak var subtotalLbl: UILabel!
     @IBOutlet weak var processingFeeLbl: UILabel!
     @IBOutlet weak var shippingCostLbl: UILabel!

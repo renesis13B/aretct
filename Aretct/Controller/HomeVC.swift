@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FBSDKLoginKit
 
 class HomeVC: UIViewController {
     //Outlets
@@ -21,16 +20,15 @@ class HomeVC: UIViewController {
     var selectedCategory: Category!
     var db : Firestore!
     var listener : ListenerRegistration!
-    let loginManager = LoginManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //これでFirestoreのルート(Home)ディレクトリが取得できる
         db = Firestore.firestore()
         setupCollectionView()
         setupInitialAnonymousUser()
-        //Storybordからもナビゲージョンのスタイルを変更可能
         setupNavigationBar()
+        setupModalLoginVC()
         
     }
     
@@ -61,10 +59,24 @@ class HomeVC: UIViewController {
             }
         }
     }
+    
+    func setupModalLoginVC() {
+        if UserService.isGuest {
+            guard let nowStoruboard = self.restorationIdentifier else { return }
+            
+            if nowStoruboard == "AretctMainStoryBoard" {
+                let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
+                present(controller, animated: true, completion: nil)
+            }
+            
+        }
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         //viewDidLoadはviewのインスタンス時に一度だけ呼ばれる
         //対照的にviewDidAppearはロードするたびに表示される
+
         
         setCategoriesListener()
         
@@ -80,6 +92,9 @@ class HomeVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         //VCが破棄されると監視を削除する
+        
+        guard let listener = listener else { return }
+        
         listener.remove()
         categories.removeAll()
         collectionView.reloadData()
@@ -139,7 +154,7 @@ class HomeVC: UIViewController {
             //匿名ログイン以外でログアウトボタンを押した場合
             do{
                 try Auth.auth().signOut()
-                loginManager.logOut()
+                UserService.logoutUser()
                 //ログアウト後に、匿名ログイン状態に戻す必要があるから
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error {
@@ -228,55 +243,3 @@ extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
     }
 }
-
-
-//参考用
-
-//    func fetchDocument() {
-//        //単一ドキュメントの参照を作成する
-//        let docRef = db.collection("categories").document("jJYI5f0YRQl2759CGJv1")
-//        //スナップショットイベントの監視をする
-//        //ドキュメントデータに変更があるたびにコードブロックを実行する
-//        docRef.addSnapshotListener { (snap, error) in
-//            //変更があると、初期化された時のインスタンスが入っているインスタンスにさらに追加されるの
-//            //結果的に更新前と更新後のドキュメントのオブジェクトが表示されることになる
-//            //よってremoveによって更新前のドキュメントを削除して、再度更新後のドキュメントでレンダリングする
-//            self.categories.removeAll()
-//            guard let data = snap?.data() else {return}
-//            let newCategory = Category.init(data: data)
-//            self.categories.append(newCategory)
-//            self.collectionView.reloadData()
-//        }
-//
-//    }
-
-//    func fetchCollection() {
-//        //コレクションを参照して、その中に含まれる複数のドキュメントを取得する
-//        let collectionReference = db.collection("categories")
-//
-//        listener = collectionReference.addSnapshotListener { (snap, error) in
-//            guard let documents = snap?.documents else {return}
-//
-//            //
-//            print(snap?.documentChanges.count)
-//
-//            self.categories.removeAll()
-//            for document in documents {
-//                let data = document.data()
-//                let newCategory = Category.init(data: data)
-//                self.categories.append(newCategory)
-//            }
-//            self.collectionView.reloadData()
-//        }
-
-//クエリスナップショットを返す参照を取得する
-//        collectionReference.getDocuments { (snap, error) in
-//            guard let documents = snap?.documents else {return}
-//            for document in documents {
-//                let data = document.data()
-//                let newCategory = Category.init(data: data)
-//                self.categories.append(newCategory)
-//            }
-//            self.collectionView.reloadData()
-//        }
-//    }

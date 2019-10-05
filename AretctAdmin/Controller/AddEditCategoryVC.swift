@@ -16,6 +16,7 @@ class AddEditCategoryVC: UIViewController {
     @IBOutlet weak var categoryImg: RoundImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var removeBtn: WhiteRoundedButton!
     
     var categoryToEdit : Category?
     
@@ -29,7 +30,8 @@ class AddEditCategoryVC: UIViewController {
         // If we are editing, categoryToEdit will != nil
         if let category = categoryToEdit {
             nameTxt.text = category.name
-            addBtn.setTitle("Save Change", for: .normal)
+            addBtn.setTitle("変更を保存する", for: .normal)
+            removeBtn.setTitle("このカテゴリーを削除する", for: .normal)
             
             if let url = URL(string: category.imgUrl) {
                 categoryImg.contentMode = .scaleAspectFill
@@ -44,9 +46,19 @@ class AddEditCategoryVC: UIViewController {
         launchImgPicker()
     }
     
+    @IBAction func removeclicked(_ sender: Any) {
+        var docRef: DocumentReference!
+        if let categoryToEdit = categoryToEdit {
+            docRef = Firestore.firestore().collection("categories").document(categoryToEdit.id)
+            docRef.delete()
+            self.navigationController?.popToViewController(navigationController!.viewControllers[0], animated: true)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    
     @IBAction func addCategoryClicked(_ sender: Any) {
-       
-        
         uploadImageTheDocument()
     }
     

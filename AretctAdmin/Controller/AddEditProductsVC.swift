@@ -11,6 +11,7 @@ import FirebaseStorage
 import FirebaseFirestore
 
 class AddEditProductsVC: UIViewController {
+   
     //Outlets
     @IBOutlet weak var productNameTxt: UITextField!
     @IBOutlet weak var productBrandNameTxt: UITextField!
@@ -19,6 +20,7 @@ class AddEditProductsVC: UIViewController {
     @IBOutlet weak var productImgView: RoundImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var addBtn: RoundedButton!
+    @IBOutlet weak var removeBtn: WhiteRoundedButton!
     
     
     //Variables
@@ -42,6 +44,8 @@ class AddEditProductsVC: UIViewController {
             productBrandNameTxt.text = product.burandName
             productDescTxt.text = product.productDescription
             productPriceTxt.text = String(product.price)
+            addBtn.setTitle("変更を保存する", for: .normal)
+            removeBtn.setTitle("この商品を削除する", for: .normal)
             
             if let url = URL(string: product.imageUrl) {
                  productImgView.contentMode = .scaleToFill
@@ -55,7 +59,17 @@ class AddEditProductsVC: UIViewController {
         // Launch the image picker
         launchImgPicker()
     }
-
+    @IBAction func removeClicked(_ sender: Any) {
+        var docRef : DocumentReference!
+        if let productToEdit = productToEdit {
+            docRef = Firestore.firestore().collection("products").document(productToEdit.id)
+            docRef.delete()
+            self.navigationController?.popViewController(animated: true)
+        } else {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
     @IBAction func addClicked(_ sender: Any) {
         uploadImageTheDocument()
     }
