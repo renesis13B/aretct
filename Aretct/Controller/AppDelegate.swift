@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FBSDKCoreKit
 import Stripe
 
 
@@ -22,17 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         Stripe.setDefaultPublishableKey("pk_test_r1V8vGUJA9MjmP7aw8CcSuHG00Mt6zJg5E")
-        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+//        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         
         return true
     }
     
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let returnFB = ApplicationDelegate.shared.application(app, open: url, options: options)
-        return returnFB
-    }
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        let returnFB = ApplicationDelegate.shared.application(app, open: url, options: options)
+//        return returnFB
+//    }
     
 
     func applicationWillResignActive(_ application: UIApplication) {

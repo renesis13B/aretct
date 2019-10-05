@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import FBSDKLoginKit
 import Kingfisher
 
 class RegisterVC: UIViewController {

@@ -29,6 +29,7 @@ class HomeVC: UIViewController {
         setupInitialAnonymousUser()
         setupNavigationBar()
         setupModalLoginVC()
+        
     }
     
     
@@ -61,9 +62,14 @@ class HomeVC: UIViewController {
     
     func setupModalLoginVC() {
         if UserService.isGuest {
-            let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
-            present(controller, animated: true, completion: nil)
+            guard let nowStoruboard = self.restorationIdentifier else { return }
+            
+            if nowStoruboard == "AretctMainStoryBoard" {
+                let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
+                present(controller, animated: true, completion: nil)
+            }
+            
         }
     }
 
