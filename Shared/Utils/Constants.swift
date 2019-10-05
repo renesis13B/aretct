@@ -30,7 +30,6 @@ struct AppImages {
 }
 
 struct AppColors {
-    //Colorリテラル Colorとタイプしてエンターを押す
     static let Green = #colorLiteral(red: 0, green: 0.768627451, blue: 0.6470588235, alpha: 1)
     static let Gray = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
 }

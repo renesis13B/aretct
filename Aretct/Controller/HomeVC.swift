@@ -24,11 +24,9 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //これでFirestoreのルート(Home)ディレクトリが取得できる
         db = Firestore.firestore()
         setupCollectionView()
         setupInitialAnonymousUser()
-        //Storybordからもナビゲージョンのスタイルを変更可能
         setupNavigationBar()
         setupModalLoginVC()
     }
@@ -239,55 +237,3 @@ extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource, UIColle
         }
     }
 }
-
-
-//参考用
-
-//    func fetchDocument() {
-//        //単一ドキュメントの参照を作成する
-//        let docRef = db.collection("categories").document("jJYI5f0YRQl2759CGJv1")
-//        //スナップショットイベントの監視をする
-//        //ドキュメントデータに変更があるたびにコードブロックを実行する
-//        docRef.addSnapshotListener { (snap, error) in
-//            //変更があると、初期化された時のインスタンスが入っているインスタンスにさらに追加されるの
-//            //結果的に更新前と更新後のドキュメントのオブジェクトが表示されることになる
-//            //よってremoveによって更新前のドキュメントを削除して、再度更新後のドキュメントでレンダリングする
-//            self.categories.removeAll()
-//            guard let data = snap?.data() else {return}
-//            let newCategory = Category.init(data: data)
-//            self.categories.append(newCategory)
-//            self.collectionView.reloadData()
-//        }
-//
-//    }
-
-//    func fetchCollection() {
-//        //コレクションを参照して、その中に含まれる複数のドキュメントを取得する
-//        let collectionReference = db.collection("categories")
-//
-//        listener = collectionReference.addSnapshotListener { (snap, error) in
-//            guard let documents = snap?.documents else {return}
-//
-//            //
-//            print(snap?.documentChanges.count)
-//
-//            self.categories.removeAll()
-//            for document in documents {
-//                let data = document.data()
-//                let newCategory = Category.init(data: data)
-//                self.categories.append(newCategory)
-//            }
-//            self.collectionView.reloadData()
-//        }
-
-//クエリスナップショットを返す参照を取得する
-//        collectionReference.getDocuments { (snap, error) in
-//            guard let documents = snap?.documents else {return}
-//            for document in documents {
-//                let data = document.data()
-//                let newCategory = Category.init(data: data)
-//                self.categories.append(newCategory)
-//            }
-//            self.collectionView.reloadData()
-//        }
-//    }

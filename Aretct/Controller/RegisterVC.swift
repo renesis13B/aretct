@@ -26,7 +26,6 @@ class RegisterVC: UIViewController {
        
     }
     
-    //Action
     @IBAction func registerNewMemberClicked(_ sender: Any) {
         guard let email = emailTxt.text, !email.isEmpty,
             let username = usernameTxt.text, !username.isEmpty,
@@ -80,13 +79,6 @@ class RegisterVC: UIViewController {
                 self.activityIndicater.stopAnimating()
                 self.dismiss(animated: true, completion: nil)
             }
-            
-            
         }
     }
-    
-    
-
-    
-
 }

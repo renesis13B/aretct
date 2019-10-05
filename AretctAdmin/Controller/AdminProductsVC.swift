@@ -43,7 +43,6 @@ class AdminProductsVC: ProductsVC {
             }
         } else if segue.identifier == Segues.ToEditCategory {
             if let destination = segue.destination as? AddEditCategoryVC {
-//                print(category)
                 destination.categoryToEdit = category
             }
         }

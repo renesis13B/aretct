@@ -11,6 +11,7 @@ import FirebaseStorage
 import FirebaseFirestore
 
 class AddEditProductsVC: UIViewController {
+   
     //Outlets
     @IBOutlet weak var productNameTxt: UITextField!
     @IBOutlet weak var productBrandNameTxt: UITextField!

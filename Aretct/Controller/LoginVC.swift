@@ -12,6 +12,7 @@ import FBSDKLoginKit
 import FirebaseFirestore
 
 class LoginVC: UIViewController {
+    
     //Outlets
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
@@ -21,8 +22,6 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
     }
     
-    
-    //Actions
     @IBAction func forgotPassClicked(_ sender: Any) {
         let vc = ForgotPasswordVC()
         vc.modalTransitionStyle = .crossDissolve
@@ -40,7 +39,6 @@ class LoginVC: UIViewController {
         
         activityIndicator.startAnimating()
         
-        //公式サイト確認する
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             
             if let error = error {

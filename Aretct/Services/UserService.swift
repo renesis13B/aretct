@@ -13,17 +13,15 @@ import FirebaseFirestore
 let UserService = _UserService()
 
 final class _UserService {
+    
     // Variables
     var user = User()
     var favorites = [Product]()
-    
     let auth = Auth.auth()
     let db = Firestore.firestore()
     var userListener : ListenerRegistration? = nil
     var favsListener : ListenerRegistration? = nil
-    
     var isGuest : Bool {
-        
         guard let authUser = auth.currentUser else {
             return true
         }
