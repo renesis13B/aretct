@@ -69,7 +69,7 @@
                                     <segue destination="ia0-Za-v4z" kind="show" identifier="ToCheckoutVC" id="VlC-T1-n9l"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="Shape-7" id="IRi-sQ-8Rx">
+                            <barButtonItem image="bar_button_heart" id="IRi-sQ-8Rx">
                                 <connections>
                                     <action selector="favoritesClicked:" destination="BYZ-38-t0r" id="Yew-42-cHV"/>
                                 </connections>
@@ -339,11 +339,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Shape-7" width="25" height="23"/>
         <image name="bar_button_cart" width="27" height="24"/>
+        <image name="bar_button_heart" width="25" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ude-dY-RK5"/>
-        <segue reference="Zq6-cu-n4v"/>
+        <segue reference="VlC-T1-n9l"/>
     </inferredMetricsTieBreakers>
 </document>
