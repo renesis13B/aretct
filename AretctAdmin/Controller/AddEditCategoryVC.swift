@@ -29,7 +29,7 @@ class AddEditCategoryVC: UIViewController {
         // If we are editing, categoryToEdit will != nil
         if let category = categoryToEdit {
             nameTxt.text = category.name
-            addBtn.setTitle("Save Change", for: .normal)
+            addBtn.setTitle("変更を保存する", for: .normal)
             
             if let url = URL(string: category.imgUrl) {
                 categoryImg.contentMode = .scaleAspectFill

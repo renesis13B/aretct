@@ -43,7 +43,7 @@ class AddEditProductsVC: UIViewController {
             productBrandNameTxt.text = product.burandName
             productDescTxt.text = product.productDescription
             productPriceTxt.text = String(product.price)
-            
+            addBtn.setTitle("変更を保存する", for: .normal)
             if let url = URL(string: product.imageUrl) {
                  productImgView.contentMode = .scaleToFill
                 productImgView.kf.setImage(with: url)
