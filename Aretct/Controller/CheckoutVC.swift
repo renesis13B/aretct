@@ -149,7 +149,7 @@ extension CheckoutVC: STPPaymentContextDelegate {
             message = error?.localizedDescription ?? ""
         case .success:
             title = "Success!"
-            message = "Thank you for your purchase."
+            message = "購入ありがとうございます！"
         case .userCancellation:
             return
         }
