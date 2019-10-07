@@ -77,6 +77,7 @@
 		DA6A8477232FC84400299EE7 /* StripeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8476232FC84400299EE7 /* StripeApi.swift */; };
 		DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
 		DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */; };
+		DA815147234B033600254681 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1B230AED7A007947C3 /* LoginStoryboard.storyboard */; };
 		DAA6D06B23424B35007E8D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA6D06A23424B35007E8D86 /* Assets.xcassets */; };
 		DAA6D06C23424B35007E8D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA6D06A23424B35007E8D86 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -720,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4B0E4123115E93007947C3 /* CategoryCell.xib in Resources */,
+				DA815147234B033600254681 /* LoginStoryboard.storyboard in Resources */,
 				DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */,
 				DA4B0E20230B0986007947C3 /* GoogleService-Info.plist in Resources */,
 				DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */,
