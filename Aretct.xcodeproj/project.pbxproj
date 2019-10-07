@@ -78,6 +78,7 @@
 		DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
 		DA774F142313DA3B00C42ADA /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */; };
 		DA815147234B033600254681 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1B230AED7A007947C3 /* LoginStoryboard.storyboard */; };
+		DA815148234B079800254681 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E25230B11A0007947C3 /* LoginVC.swift */; };
 		DAA6D06B23424B35007E8D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA6D06A23424B35007E8D86 /* Assets.xcassets */; };
 		DAA6D06C23424B35007E8D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA6D06A23424B35007E8D86 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -945,6 +946,7 @@
 			files = (
 				DA4F3722233BD157007E6F7C /* StripeCart.swift in Sources */,
 				DA4B0E4523117835007947C3 /* ProductsVC.swift in Sources */,
+				DA815148234B079800254681 /* LoginVC.swift in Sources */,
 				DA317AC0231407000001C9E7 /* Constants.swift in Sources */,
 				DA4B0E3823113186007947C3 /* Firebase+Utils.swift in Sources */,
 				DA317AC1231407030001C9E7 /* Extension.swift in Sources */,
