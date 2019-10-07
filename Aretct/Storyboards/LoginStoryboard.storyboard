@@ -284,7 +284,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="N44-m2-Ns9"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="AJB-Sw-1b9" id="37i-U8-FuL"/>
+                        <outlet property="activityIndicator" destination="AJB-Sw-1b9" id="Yqx-hp-eEG"/>
                         <outlet property="emailTxt" destination="zMl-UO-xdC" id="2Ud-4r-4d5"/>
                         <outlet property="passTxt" destination="5Uk-iI-d8U" id="0Hc-Eu-Msb"/>
                     </connections>
