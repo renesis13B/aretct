@@ -102,7 +102,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="fry-aa-TlZ"/>
                                 </constraints>
-                                <state key="normal" title="Place Order">
+                                <state key="normal" title="購入を確定する">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -344,6 +344,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ude-dY-RK5"/>
-        <segue reference="VlC-T1-n9l"/>
+        <segue reference="Zq6-cu-n4v"/>
     </inferredMetricsTieBreakers>
 </document>
