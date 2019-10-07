@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>142012023291-2lksoofk6lt1egc3idi4i1l8m8puevsk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.142012023291-2lksoofk6lt1egc3idi4i1l8m8puevsk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzTo-wwe6eRm6b9cmf71tuyed6DpTYT64</string>
+	<key>GCM_SENDER_ID</key>
+	<string>142012023291</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>yw.AretctAdmin</string>
+	<key>PROJECT_ID</key>
+	<string>aretct-2dca0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aretct-2dca0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:142012023291:ios:7904a36e6ebd69ff</string>
+	<key>DATABASE_URL</key>
+	<string>https://aretct-2dca0.firebaseio.com</string>
+</dict>
+</plist>
