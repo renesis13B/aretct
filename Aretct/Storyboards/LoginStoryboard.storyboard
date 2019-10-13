@@ -217,6 +217,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88W-rn-8rk" customClass="RoundedButton" customModule="Aretct" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="130.00000000000006" width="295" height="40"/>
                                                 <color key="backgroundColor" red="1" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="loginBtn"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="tyu-zm-jIM"/>
                                                 </constraints>
@@ -270,6 +271,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="loginView"/>
                         <constraints>
                             <constraint firstItem="17e-wG-AAS" firstAttribute="top" secondItem="ham-Yz-2p1" secondAttribute="top" constant="48" id="6J8-XP-0NQ"/>
                             <constraint firstItem="ham-Yz-2p1" firstAttribute="bottom" secondItem="17e-wG-AAS" secondAttribute="bottom" constant="48" id="BD8-0l-qje"/>
