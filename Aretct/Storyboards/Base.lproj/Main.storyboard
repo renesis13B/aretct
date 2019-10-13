@@ -43,6 +43,7 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="homeView"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D6m-tw-3TU" secondAttribute="trailing" constant="10" id="5UA-gg-O58"/>
                             <constraint firstAttribute="trailing" secondItem="BhJ-QI-WL7" secondAttribute="trailing" id="DAB-Ae-lSM"/>
@@ -344,6 +345,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ude-dY-RK5"/>
-        <segue reference="Zq6-cu-n4v"/>
+        <segue reference="VlC-T1-n9l"/>
     </inferredMetricsTieBreakers>
 </document>

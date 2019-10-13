@@ -21,17 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         Stripe.setDefaultPublishableKey("pk_test_r1V8vGUJA9MjmP7aw8CcSuHG00Mt6zJg5E")
-//        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        if CommandLine.arguments.contains("--uitesting") {
+            resetState()
+        }
         
         
         return true
     }
-    
-    
-//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-//        let returnFB = ApplicationDelegate.shared.application(app, open: url, options: options)
-//        return returnFB
-//    }
     
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -56,6 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
-}
+    func resetState() {
+        guard let bundleIdentifier = Bundle.main.bundleIdentifier else { fatalError() }
+        UserDefaults.standard.removePersistentDomain(forName: bundleIdentifier)
+    }}
 
