@@ -34,11 +34,54 @@ class AretctUITests: XCTestCase {
         app.buttons["loginOutBtn"].tap()
         XCTAssertTrue(app.isDisplayingLogin)
     }
+    
+    func testLoginVC_EmailInput_WhenGivinEmail_FillsTextField() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        
+        let emailTextfield = app.textFields["メールアドレス"]
+        emailTextfield.tap()
+        emailTextfield.typeText("uitest@deci.com")
+        
+        XCTAssertTrue(app.textFields["uitest@deci.com"].exists)
+    }
+    
+    func testPasswordInput_WhenGivinPassword_FillsTextField() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        XCTAssertTrue(app.secureTextFields["パスワード"].exists)
+    }
+    
+    func testPasswordInput_WhenGivinPassword_Fd() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        
+        
+        app.buttons["loginBtn"].tap()
+        XCTAssertTrue(app.isDisplayingSimpleAlert)
+    }
+    
+    func testPasswordInput_WhenGivinPassword_F() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        
+        
+        app.buttons["ログインせずに使う"].tap()
+        XCTAssertTrue(app.isDisplayingHome)
+    }
 
 }
 
 extension XCUIApplication {
     var isDisplayingLogin: Bool {
         return otherElements["loginView"].exists
+    }
+    
+    var isDisplayingHome: Bool {
+        return otherElements["homeView"].exists
+    }
+    
+    var isDisplayingSimpleAlert: Bool {
+        return alerts["Error"].exists
     }
 }
