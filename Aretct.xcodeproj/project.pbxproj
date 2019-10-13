@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19AF2ADE2184E5BCC986F38A /* Pods_AretctAdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D478A4753060108FF463BEB /* Pods_AretctAdminUITests.framework */; };
-		323D15FE94CDDF0ED955A95D /* Pods_AretctUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78CF1451EFACD7CDF83305A /* Pods_AretctUITests.framework */; };
 		826A3714807506292F6265C3 /* Pods_Aretct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E337F8ECB6BD087570C0B1F1 /* Pods_Aretct.framework */; };
-		882C49D658AAE040F941FE45 /* Pods_AretctTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347AA22B7387C598AAD204FB /* Pods_AretctTests.framework */; };
 		927F0049707C14D0D6C4793D /* Pods_AretctAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD0420851B96DA7100489A /* Pods_AretctAdmin.framework */; };
-		AF694561AC93DC4206D20DE6 /* Pods_AretctAdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8CF662ED4B5E2543CA7F50 /* Pods_AretctAdminTests.framework */; };
 		DA16BDEB2320E91D001CC6EC /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDEA2320E91D001CC6EC /* CheckoutVC.swift */; };
 		DA16BDEE2320F341001CC6EC /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDEC2320F341001CC6EC /* CartItemCell.swift */; };
 		DA16BDEF2320F341001CC6EC /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16BDED2320F341001CC6EC /* CartItemCell.xib */; };
@@ -39,14 +35,10 @@
 		DA4B0DBC230AC0B7007947C3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DBB230AC0B7007947C3 /* HomeVC.swift */; };
 		DA4B0DBF230AC0B7007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DBD230AC0B7007947C3 /* Main.storyboard */; };
 		DA4B0DC4230AC0B7007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DC2230AC0B7007947C3 /* LaunchScreen.storyboard */; };
-		DA4B0DCF230AC0B8007947C3 /* AretctTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DCE230AC0B8007947C3 /* AretctTests.swift */; };
-		DA4B0DDA230AC0B8007947C3 /* AretctUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */; };
 		DA4B0DEE230AC109007947C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DED230AC109007947C3 /* AppDelegate.swift */; };
 		DA4B0DF0230AC109007947C3 /* AdminHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0DEF230AC109007947C3 /* AdminHomeVC.swift */; };
 		DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF1230AC109007947C3 /* Main.storyboard */; };
 		DA4B0DF8230AC10A007947C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0DF6230AC10A007947C3 /* LaunchScreen.storyboard */; };
-		DA4B0E03230AC10A007947C3 /* AretctAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */; };
-		DA4B0E0E230AC10A007947C3 /* AretctAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */; };
 		DA4B0E1C230AED7A007947C3 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1B230AED7A007947C3 /* LoginStoryboard.storyboard */; };
 		DA4B0E1E230B0758007947C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1D230B0758007947C3 /* GoogleService-Info.plist */; };
 		DA4B0E20230B0986007947C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E1F230B0986007947C3 /* GoogleService-Info.plist */; };
@@ -73,6 +65,7 @@
 		DA4B0E4C23117AD4007947C3 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B0E4923117AD4007947C3 /* ProductCell.swift */; };
 		DA4B0E4D23117AD4007947C3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E4A23117AD4007947C3 /* ProductCell.xib */; };
 		DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E4A23117AD4007947C3 /* ProductCell.xib */; };
+		DA4CFCBA23536C4700FF8097 /* AretctUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CFCB923536C4700FF8097 /* AretctUITests.swift */; };
 		DA4F3722233BD157007E6F7C /* StripeCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDF12320FD7C001CC6EC /* StripeCart.swift */; };
 		DA6A8477232FC84400299EE7 /* StripeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A8476232FC84400299EE7 /* StripeApi.swift */; };
 		DA774F132313DA3B00C42ADA /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */; };
@@ -84,33 +77,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA4B0DCB230AC0B8007947C3 /* PBXContainerItemProxy */ = {
+		DA4CFCBC23536C4700FF8097 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA4B0DAE230AC0B7007947C3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA4B0DB5230AC0B7007947C3;
 			remoteInfo = Aretct;
-		};
-		DA4B0DD6230AC0B8007947C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA4B0DAE230AC0B7007947C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA4B0DB5230AC0B7007947C3;
-			remoteInfo = Aretct;
-		};
-		DA4B0DFF230AC10A007947C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA4B0DAE230AC0B7007947C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA4B0DEA230AC109007947C3;
-			remoteInfo = AretctAdmin;
-		};
-		DA4B0E0A230AC10A007947C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA4B0DAE230AC0B7007947C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA4B0DEA230AC109007947C3;
-			remoteInfo = AretctAdmin;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -144,24 +116,12 @@
 		DA4B0DBE230AC0B7007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA4B0DC3230AC0B7007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4B0DC5230AC0B7007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4B0DCA230AC0B8007947C3 /* AretctTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA4B0DCE230AC0B8007947C3 /* AretctTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctTests.swift; sourceTree = "<group>"; };
-		DA4B0DD0230AC0B8007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4B0DD5230AC0B8007947C3 /* AretctUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctUITests.swift; sourceTree = "<group>"; };
-		DA4B0DDB230AC0B8007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4B0DEB230AC109007947C3 /* AretctAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AretctAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4B0DED230AC109007947C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4B0DEF230AC109007947C3 /* AdminHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeVC.swift; sourceTree = "<group>"; };
 		DA4B0DF2230AC109007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA4B0DF7230AC10A007947C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4B0DF9230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4B0DFE230AC10A007947C3 /* AretctAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctAdminTests.swift; sourceTree = "<group>"; };
-		DA4B0E04230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA4B0E09230AC10A007947C3 /* AretctAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctAdminUITests.swift; sourceTree = "<group>"; };
-		DA4B0E0F230AC10A007947C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4B0E1B230AED7A007947C3 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		DA4B0E1D230B0758007947C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA4B0E1F230B0986007947C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -180,6 +140,9 @@
 		DA4B0E462311795C007947C3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		DA4B0E4923117AD4007947C3 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		DA4B0E4A23117AD4007947C3 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		DA4CFCB723536C4700FF8097 /* AretctUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AretctUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4CFCB923536C4700FF8097 /* AretctUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AretctUITests.swift; sourceTree = "<group>"; };
+		DA4CFCBB23536C4700FF8097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6A8476232FC84400299EE7 /* StripeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeApi.swift; sourceTree = "<group>"; };
 		DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailVC.xib; sourceTree = "<group>"; };
@@ -201,22 +164,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B0DC7230AC0B8007947C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				882C49D658AAE040F941FE45 /* Pods_AretctTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B0DD2230AC0B8007947C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323D15FE94CDDF0ED955A95D /* Pods_AretctUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA4B0DE8230AC109007947C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,19 +172,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B0DFB230AC10A007947C3 /* Frameworks */ = {
+		DA4CFCB423536C4700FF8097 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF694561AC93DC4206D20DE6 /* Pods_AretctAdminTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B0E06230AC10A007947C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				19AF2ADE2184E5BCC986F38A /* Pods_AretctAdminUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +244,8 @@
 			children = (
 				DA4B0E19230AC141007947C3 /* Shared */,
 				DA4B0DB8230AC0B7007947C3 /* Aretct */,
-				DA4B0DCD230AC0B8007947C3 /* AretctTests */,
-				DA4B0DD8230AC0B8007947C3 /* AretctUITests */,
 				DA4B0DEC230AC109007947C3 /* AretctAdmin */,
-				DA4B0E01230AC10A007947C3 /* AretctAdminTests */,
-				DA4B0E0C230AC10A007947C3 /* AretctAdminUITests */,
+				DA4CFCB823536C4700FF8097 /* AretctUITests */,
 				DA4B0DB7230AC0B7007947C3 /* Products */,
 				B264120F75F01F1DD4A2E3EB /* Pods */,
 				ECCDCC5096178E540CDE7982 /* Frameworks */,
@@ -321,11 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				DA4B0DB6230AC0B7007947C3 /* Aretct.app */,
-				DA4B0DCA230AC0B8007947C3 /* AretctTests.xctest */,
-				DA4B0DD5230AC0B8007947C3 /* AretctUITests.xctest */,
 				DA4B0DEB230AC109007947C3 /* AretctAdmin.app */,
-				DA4B0DFE230AC10A007947C3 /* AretctAdminTests.xctest */,
-				DA4B0E09230AC10A007947C3 /* AretctAdminUITests.xctest */,
+				DA4CFCB723536C4700FF8097 /* AretctUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,24 +277,6 @@
 			path = Aretct;
 			sourceTree = "<group>";
 		};
-		DA4B0DCD230AC0B8007947C3 /* AretctTests */ = {
-			isa = PBXGroup;
-			children = (
-				DA4B0DCE230AC0B8007947C3 /* AretctTests.swift */,
-				DA4B0DD0230AC0B8007947C3 /* Info.plist */,
-			);
-			path = AretctTests;
-			sourceTree = "<group>";
-		};
-		DA4B0DD8230AC0B8007947C3 /* AretctUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA4B0DD9230AC0B8007947C3 /* AretctUITests.swift */,
-				DA4B0DDB230AC0B8007947C3 /* Info.plist */,
-			);
-			path = AretctUITests;
-			sourceTree = "<group>";
-		};
 		DA4B0DEC230AC109007947C3 /* AretctAdmin */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,24 +288,6 @@
 				DA4B0DF9230AC10A007947C3 /* Info.plist */,
 			);
 			path = AretctAdmin;
-			sourceTree = "<group>";
-		};
-		DA4B0E01230AC10A007947C3 /* AretctAdminTests */ = {
-			isa = PBXGroup;
-			children = (
-				DA4B0E02230AC10A007947C3 /* AretctAdminTests.swift */,
-				DA4B0E04230AC10A007947C3 /* Info.plist */,
-			);
-			path = AretctAdminTests;
-			sourceTree = "<group>";
-		};
-		DA4B0E0C230AC10A007947C3 /* AretctAdminUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DA4B0E0D230AC10A007947C3 /* AretctAdminUITests.swift */,
-				DA4B0E0F230AC10A007947C3 /* Info.plist */,
-			);
-			path = AretctAdminUITests;
 			sourceTree = "<group>";
 		};
 		DA4B0E19230AC141007947C3 /* Shared */ = {
@@ -489,6 +385,15 @@
 			path = XIBs;
 			sourceTree = "<group>";
 		};
+		DA4CFCB823536C4700FF8097 /* AretctUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CFCB923536C4700FF8097 /* AretctUITests.swift */,
+				DA4CFCBB23536C4700FF8097 /* Info.plist */,
+			);
+			path = AretctUITests;
+			sourceTree = "<group>";
+		};
 		DAA6D069234238E8007E8D86 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,44 +436,6 @@
 			productReference = DA4B0DB6230AC0B7007947C3 /* Aretct.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA4B0DC9230AC0B8007947C3 /* AretctTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA4B0DE1230AC0B8007947C3 /* Build configuration list for PBXNativeTarget "AretctTests" */;
-			buildPhases = (
-				D0D1BBD6751EFD444EE34D87 /* [CP] Check Pods Manifest.lock */,
-				DA4B0DC6230AC0B8007947C3 /* Sources */,
-				DA4B0DC7230AC0B8007947C3 /* Frameworks */,
-				DA4B0DC8230AC0B8007947C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA4B0DCC230AC0B8007947C3 /* PBXTargetDependency */,
-			);
-			name = AretctTests;
-			productName = AretctTests;
-			productReference = DA4B0DCA230AC0B8007947C3 /* AretctTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DA4B0DD4230AC0B8007947C3 /* AretctUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA4B0DE4230AC0B8007947C3 /* Build configuration list for PBXNativeTarget "AretctUITests" */;
-			buildPhases = (
-				F542D0D83E36A03456EE6BE3 /* [CP] Check Pods Manifest.lock */,
-				DA4B0DD1230AC0B8007947C3 /* Sources */,
-				DA4B0DD2230AC0B8007947C3 /* Frameworks */,
-				DA4B0DD3230AC0B8007947C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA4B0DD7230AC0B8007947C3 /* PBXTargetDependency */,
-			);
-			name = AretctUITests;
-			productName = AretctUITests;
-			productReference = DA4B0DD5230AC0B8007947C3 /* AretctUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		DA4B0DEA230AC109007947C3 /* AretctAdmin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA4B0E10230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdmin" */;
@@ -588,42 +455,22 @@
 			productReference = DA4B0DEB230AC109007947C3 /* AretctAdmin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA4B0DFD230AC10A007947C3 /* AretctAdminTests */ = {
+		DA4CFCB623536C4700FF8097 /* AretctUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA4B0E13230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminTests" */;
+			buildConfigurationList = DA4CFCBE23536C4700FF8097 /* Build configuration list for PBXNativeTarget "AretctUITests" */;
 			buildPhases = (
-				CE1952ACE5615DB2469EE474 /* [CP] Check Pods Manifest.lock */,
-				DA4B0DFA230AC10A007947C3 /* Sources */,
-				DA4B0DFB230AC10A007947C3 /* Frameworks */,
-				DA4B0DFC230AC10A007947C3 /* Resources */,
+				DA4CFCB323536C4700FF8097 /* Sources */,
+				DA4CFCB423536C4700FF8097 /* Frameworks */,
+				DA4CFCB523536C4700FF8097 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA4B0E00230AC10A007947C3 /* PBXTargetDependency */,
+				DA4CFCBD23536C4700FF8097 /* PBXTargetDependency */,
 			);
-			name = AretctAdminTests;
-			productName = AretctAdminTests;
-			productReference = DA4B0DFE230AC10A007947C3 /* AretctAdminTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DA4B0E08230AC10A007947C3 /* AretctAdminUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA4B0E16230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminUITests" */;
-			buildPhases = (
-				F8E1B93E756243CABCEE8F05 /* [CP] Check Pods Manifest.lock */,
-				DA4B0E05230AC10A007947C3 /* Sources */,
-				DA4B0E06230AC10A007947C3 /* Frameworks */,
-				DA4B0E07230AC10A007947C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA4B0E0B230AC10A007947C3 /* PBXTargetDependency */,
-			);
-			name = AretctAdminUITests;
-			productName = AretctAdminUITests;
-			productReference = DA4B0E09230AC10A007947C3 /* AretctAdminUITests.xctest */;
+			name = AretctUITests;
+			productName = AretctUITests;
+			productReference = DA4CFCB723536C4700FF8097 /* AretctUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -632,31 +479,19 @@
 		DA4B0DAE230AC0B7007947C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = yw;
 				TargetAttributes = {
 					DA4B0DB5230AC0B7007947C3 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					DA4B0DC9230AC0B8007947C3 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = DA4B0DB5230AC0B7007947C3;
-					};
-					DA4B0DD4230AC0B8007947C3 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = DA4B0DB5230AC0B7007947C3;
-					};
 					DA4B0DEA230AC109007947C3 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					DA4B0DFD230AC10A007947C3 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = DA4B0DEA230AC109007947C3;
-					};
-					DA4B0E08230AC10A007947C3 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = DA4B0DEA230AC109007947C3;
+					DA4CFCB623536C4700FF8097 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = DA4B0DB5230AC0B7007947C3;
 					};
 				};
 			};
@@ -674,11 +509,8 @@
 			projectRoot = "";
 			targets = (
 				DA4B0DB5230AC0B7007947C3 /* Aretct */,
-				DA4B0DC9230AC0B8007947C3 /* AretctTests */,
-				DA4B0DD4230AC0B8007947C3 /* AretctUITests */,
 				DA4B0DEA230AC109007947C3 /* AretctAdmin */,
-				DA4B0DFD230AC10A007947C3 /* AretctAdminTests */,
-				DA4B0E08230AC10A007947C3 /* AretctAdminUITests */,
+				DA4CFCB623536C4700FF8097 /* AretctUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -703,20 +535,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B0DC8230AC0B8007947C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B0DD3230AC0B8007947C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA4B0DE9230AC109007947C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -734,14 +552,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B0DFC230AC10A007947C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B0E07230AC10A007947C3 /* Resources */ = {
+		DA4CFCB523536C4700FF8097 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -821,78 +632,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AretctAdmin/Pods-AretctAdmin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CE1952ACE5615DB2469EE474 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AretctAdminTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0D1BBD6751EFD444EE34D87 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AretctTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F542D0D83E36A03456EE6BE3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AretctUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8E1B93E756243CABCEE8F05 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AretctAdminUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -924,22 +663,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B0DC6230AC0B8007947C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA4B0DCF230AC0B8007947C3 /* AretctTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B0DD1230AC0B8007947C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA4B0DDA230AC0B8007947C3 /* AretctUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA4B0DE7230AC109007947C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -968,44 +691,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA4B0DFA230AC10A007947C3 /* Sources */ = {
+		DA4CFCB323536C4700FF8097 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4B0E03230AC10A007947C3 /* AretctAdminTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA4B0E05230AC10A007947C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA4B0E0E230AC10A007947C3 /* AretctAdminUITests.swift in Sources */,
+				DA4CFCBA23536C4700FF8097 /* AretctUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA4B0DCC230AC0B8007947C3 /* PBXTargetDependency */ = {
+		DA4CFCBD23536C4700FF8097 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA4B0DB5230AC0B7007947C3 /* Aretct */;
-			targetProxy = DA4B0DCB230AC0B8007947C3 /* PBXContainerItemProxy */;
-		};
-		DA4B0DD7230AC0B8007947C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA4B0DB5230AC0B7007947C3 /* Aretct */;
-			targetProxy = DA4B0DD6230AC0B8007947C3 /* PBXContainerItemProxy */;
-		};
-		DA4B0E00230AC10A007947C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA4B0DEA230AC109007947C3 /* AretctAdmin */;
-			targetProxy = DA4B0DFF230AC10A007947C3 /* PBXContainerItemProxy */;
-		};
-		DA4B0E0B230AC10A007947C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA4B0DEA230AC109007947C3 /* AretctAdmin */;
-			targetProxy = DA4B0E0A230AC10A007947C3 /* PBXContainerItemProxy */;
+			targetProxy = DA4CFCBC23536C4700FF8097 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1199,88 +899,6 @@
 			};
 			name = Release;
 		};
-		DA4B0DE2230AC0B8007947C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09778858FEC0703CC78CE1E8 /* Pods-AretctTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aretct.app/Aretct";
-			};
-			name = Debug;
-		};
-		DA4B0DE3230AC0B8007947C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECD78BC86704201E081B845D /* Pods-AretctTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aretct.app/Aretct";
-			};
-			name = Release;
-		};
-		DA4B0DE5230AC0B8007947C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7025BE4850E635C17251684C /* Pods-AretctUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Aretct;
-			};
-			name = Debug;
-		};
-		DA4B0DE6230AC0B8007947C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E61FD73E9B53952FAE2BF46E /* Pods-AretctUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Aretct;
-			};
-			name = Release;
-		};
 		DA4B0E11230AC10A007947C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1425162ACE78DB0A2AFF62B /* Pods-AretctAdmin.debug.xcconfig */;
@@ -1319,85 +937,41 @@
 			};
 			name = Release;
 		};
-		DA4B0E14230AC10A007947C3 /* Debug */ = {
+		DA4CFCBF23536C4700FF8097 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB8BB071548594FFEB03AEAD /* Pods-AretctAdminTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctAdminTests/Info.plist;
+				INFOPLIST_FILE = AretctUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminTests;
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AretctAdmin.app/AretctAdmin";
+				TEST_TARGET_NAME = Aretct;
 			};
 			name = Debug;
 		};
-		DA4B0E15230AC10A007947C3 /* Release */ = {
+		DA4CFCC023536C4700FF8097 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB59BD9B94FBA2C44BCA2E78 /* Pods-AretctAdminTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctAdminTests/Info.plist;
+				INFOPLIST_FILE = AretctUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminTests;
+				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AretctAdmin.app/AretctAdmin";
-			};
-			name = Release;
-		};
-		DA4B0E17230AC10A007947C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 055FEFBBB14389C3A49BFC44 /* Pods-AretctAdminUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctAdminUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AretctAdmin;
-			};
-			name = Debug;
-		};
-		DA4B0E18230AC10A007947C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A74F98A0B3BA272AA770AED3 /* Pods-AretctAdminUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AretctAdminUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = yw.AretctAdminUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AretctAdmin;
+				TEST_TARGET_NAME = Aretct;
 			};
 			name = Release;
 		};
@@ -1422,24 +996,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA4B0DE1230AC0B8007947C3 /* Build configuration list for PBXNativeTarget "AretctTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA4B0DE2230AC0B8007947C3 /* Debug */,
-				DA4B0DE3230AC0B8007947C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA4B0DE4230AC0B8007947C3 /* Build configuration list for PBXNativeTarget "AretctUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA4B0DE5230AC0B8007947C3 /* Debug */,
-				DA4B0DE6230AC0B8007947C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DA4B0E10230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdmin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1449,20 +1005,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA4B0E13230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminTests" */ = {
+		DA4CFCBE23536C4700FF8097 /* Build configuration list for PBXNativeTarget "AretctUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA4B0E14230AC10A007947C3 /* Debug */,
-				DA4B0E15230AC10A007947C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA4B0E16230AC10A007947C3 /* Build configuration list for PBXNativeTarget "AretctAdminUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA4B0E17230AC10A007947C3 /* Debug */,
-				DA4B0E18230AC10A007947C3 /* Release */,
+				DA4CFCBF23536C4700FF8097 /* Debug */,
+				DA4CFCC023536C4700FF8097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
