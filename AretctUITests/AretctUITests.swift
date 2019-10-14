@@ -52,20 +52,17 @@ class AretctUITests: XCTestCase {
         XCTAssertTrue(app.secureTextFields["パスワード"].exists)
     }
     
-    func testPasswordInput_WhenGivinPassword_Fd() {
+    func testLoginVC_WhenloginBtnTappedNOtextField_shouldDisplaySimpleAleart() {
         app.launch()
         app.buttons["loginOutBtn"].tap()
-        
         
         app.buttons["loginBtn"].tap()
         XCTAssertTrue(app.isDisplayingSimpleAlert)
     }
     
-    func testPasswordInput_WhenGivinPassword_F() {
+    func testLoginVCt_WhenNologinBtnTapped_shouldDisplayHomeVC() {
         app.launch()
         app.buttons["loginOutBtn"].tap()
-        
-        
         app.buttons["ログインせずに使う"].tap()
         XCTAssertTrue(app.isDisplayingHome)
     }
