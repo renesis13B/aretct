@@ -29,7 +29,7 @@ class RegisterVC: UIViewController {
         guard let email = emailTxt.text, !email.isEmpty,
             let username = usernameTxt.text, !username.isEmpty,
             let password = passwordTxt.text, !password.isEmpty else {
-                simpleAlert(title: "Error", msg: "Please fill out all fields.")
+                simpleAlert(title: "Error", msg: AleartMessage.FileAllTextField)
                 return
         }
         

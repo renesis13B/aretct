@@ -38,6 +38,7 @@ class HomeVC: UIViewController {
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: font
         ]
+        loginOutBtn.accessibilityIdentifier = "loginOutBtn"
     }
     
     func setupCollectionView() {

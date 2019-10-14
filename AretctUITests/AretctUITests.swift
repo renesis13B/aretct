@@ -2,33 +2,83 @@
 //  AretctUITests.swift
 //  AretctUITests
 //
-//  Created by yw on 2019/08/19.
+//  Created by yw on 2019/10/13.
 //  Copyright © 2019 yw. All rights reserved.
 //
 
 import XCTest
 
+import Firebase
+@testable import Aretct
+
 class AretctUITests: XCTestCase {
 
+    var app: XCUIApplication!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        super.setUp()
         continueAfterFailure = false
-
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launchArguments.append("--uitesting")
+        
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
+        super.tearDown()
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testHome_WhenLoginOutBtnTapped_LoginVCViewLoads() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        XCTAssertTrue(app.isDisplayingLogin)
+    }
+    
+    func testLoginVC_EmailInput_WhenGivinEmail_FillsTextField() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        
+        let emailTextfield = app.textFields["メールアドレス"]
+        emailTextfield.tap()
+        emailTextfield.typeText("uitest@deci.com")
+        
+        XCTAssertTrue(app.textFields["uitest@deci.com"].exists)
+    }
+    
+    func testPasswordInput_WhenGivinPassword_FillsTextField() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        XCTAssertTrue(app.secureTextFields["パスワード"].exists)
+    }
+    
+    func testLoginVC_WhenloginBtnTappedNOtextField_shouldDisplaySimpleAleart() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        
+        app.buttons["loginBtn"].tap()
+        XCTAssertTrue(app.isDisplayingSimpleAlert)
+    }
+    
+    func testLoginVCt_WhenNologinBtnTapped_shouldDisplayHomeVC() {
+        app.launch()
+        app.buttons["loginOutBtn"].tap()
+        app.buttons["ログインせずに使う"].tap()
+        XCTAssertTrue(app.isDisplayingHome)
     }
 
+}
+
+extension XCUIApplication {
+    var isDisplayingLogin: Bool {
+        return otherElements["loginView"].exists
+    }
+    
+    var isDisplayingHome: Bool {
+        return otherElements["homeView"].exists
+    }
+    
+    var isDisplayingSimpleAlert: Bool {
+        return alerts["Error"].exists
+    }
 }

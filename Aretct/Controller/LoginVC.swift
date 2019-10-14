@@ -32,7 +32,7 @@ class LoginVC: UIViewController {
         //""だとisEmptyは trueになる
         guard let email = emailTxt.text, email.isNotEmpty,
             let password = passTxt.text, password.isNotEmpty else {
-                simpleAlert(title: "Error", msg: "Please fill out all fields")
+                simpleAlert(title: "Error", msg: AleartMessage.FileAllTextField)
                 return
         }
         

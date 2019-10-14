@@ -38,11 +38,13 @@ Aretctは、オーナー用アプリとユーザー用アプリで構成され�
 * カート追加・購入機能(Stripe)
 
 ## 技術
-* Firebase Authentication
-* Firebase Database
-* Firebase Strage
-* Stripe
-* Kingfisher
+* Firebase Authentication(ユーザー認証)
+* Firebase Database(データベース)
+* Firebase Strage(ストレージ)
+* XCTest(UIテスト)
+* Bitrise(自動テスト)
+* Stripe(決済API)
+* Kingfisher(画像ダウンロード、キャッシュ)
 
 
 ## 言語・フレームワーク

@@ -21,13 +21,14 @@ target 'Aretct' do
   shared_pods
   pod 'Stripe', '15.0.1'
 
-  target 'AretctTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'AretctTests' do
+#    inherit! :search_paths
+#
+#  end
 
   target 'AretctUITests' do
     inherit! :search_paths
+    pod 'Firebase/Core', '6.1.0'
     # Pods for testing
   end
 
@@ -40,14 +41,6 @@ target 'AretctAdmin' do
   # Pods for AretctAdmin
   shared_pods
 
-  target 'AretctAdminTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
-  target 'AretctAdminUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end
