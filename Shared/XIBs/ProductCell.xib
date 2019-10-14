@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3E-Ui-LUn" customClass="RoundedShadowView" customModule="Aretct" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="394" height="178.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal_5" translatesAutoresizingMaskIntoConstraints="NO" id="s3J-w3-0CR" customClass="RoundImageTopLefAndBottomLefttView" customModule="Aretct" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal_5" translatesAutoresizingMaskIntoConstraints="NO" id="s3J-w3-0CR" customClass="RoundImageTopLefAndBottomLefttView" customModule="Aretct" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="178.5" height="178.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s3J-w3-0CR" secondAttribute="height" multiplier="1:1" id="Vpq-aZ-1xm"/>

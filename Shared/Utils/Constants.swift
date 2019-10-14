@@ -52,4 +52,5 @@ struct Segues {
 
 struct AleartMessage {
     static let PleaseResisterUser = "これは会員限定の機能です。全ての機能を使うためには会員登録をお願いします"
+    static let FileAllTextField = "すべての項目を記入して下さい"
 }
