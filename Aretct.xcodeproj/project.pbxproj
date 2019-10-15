@@ -10,6 +10,7 @@
 		462BB7DCE237F59D337D2F73 /* Pods_AretctUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78CF1451EFACD7CDF83305A /* Pods_AretctUITests.framework */; };
 		826A3714807506292F6265C3 /* Pods_Aretct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E337F8ECB6BD087570C0B1F1 /* Pods_Aretct.framework */; };
 		927F0049707C14D0D6C4793D /* Pods_AretctAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD0420851B96DA7100489A /* Pods_AretctAdmin.framework */; };
+		DA11BAC52355A07800EF0724 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */; };
 		DA16BDEB2320E91D001CC6EC /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDEA2320E91D001CC6EC /* CheckoutVC.swift */; };
 		DA16BDEE2320F341001CC6EC /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BDEC2320F341001CC6EC /* CartItemCell.swift */; };
 		DA16BDEF2320F341001CC6EC /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA16BDED2320F341001CC6EC /* CartItemCell.xib */; };
@@ -369,8 +370,6 @@
 		DA4B0E3123111BD7007947C3 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */,
-				DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */,
 				DA774F112313DA3B00C42ADA /* ProductDetailVC.swift */,
 				DA774F122313DA3B00C42ADA /* ProductDetailVC.xib */,
 			);
@@ -383,6 +382,8 @@
 				DA4B0E4A23117AD4007947C3 /* ProductCell.xib */,
 				DA4B0E3D23115E93007947C3 /* CategoryCell.xib */,
 				DA16BDED2320F341001CC6EC /* CartItemCell.xib */,
+				DA4B0E3223111C34007947C3 /* ForgotPasswordVC.swift */,
+				DA4B0E3323111C34007947C3 /* ForgotPasswordVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -550,6 +551,7 @@
 				DA4B0E4E23117AD4007947C3 /* ProductCell.xib in Resources */,
 				DA4B0DF3230AC109007947C3 /* Main.storyboard in Resources */,
 				DA1F355E233FD07E0047FA63 /* Metropolis-Bold.otf in Resources */,
+				DA11BAC52355A07800EF0724 /* ForgotPasswordVC.xib in Resources */,
 				DA1F3561233FD3300047FA63 /* Metropolis-SemiBold.otf in Resources */,
 				DAA6D06C23424B35007E8D86 /* Assets.xcassets in Resources */,
 				DA317AC4231407DA0001C9E7 /* ProductDetailVC.xib in Resources */,
